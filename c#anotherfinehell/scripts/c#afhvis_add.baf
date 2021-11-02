@@ -1,0 +1,25 @@
+IF
+	Global("C#AfH_reset_scripts","locals",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AfH_reset_scripts","locals",1)
+		SetGlobal("bd_joined","locals",0)
+		ReallyForceSpellDeadRES("bdrejuve",Myself)  // No such index
+		ChangeEnemyAlly(Myself,NEUTRAL)
+		ChangeSpecifics(Myself,ALLIES)
+		ChangeAIScript("",CLASS)
+		ChangeAIScript("",RACE)
+		ChangeAIScript("",GENERAL)
+		ChangeAIScript("",DEFAULT)
+END
+
+IF
+	AreaCheck("c#afh3")
+	GlobalGT("bd_plot","global",599)
+	GlobalGT("C#AfH_jail_visitors","c#afh3",5) 
+	Global("C#AfH_visit_player","locals",0)
+THEN
+	RESPONSE #100
+		DestroySelf()
+END
+

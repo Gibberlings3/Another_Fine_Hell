@@ -1,0 +1,22 @@
+/* deactivate exit to FF HQ basement */
+/* FF soldier should talk to PC */
+
+IF
+	GlobalLT("bd_plot","global",642)
+	GlobalLT("C#AfHSoD_RevisedEnd","GLOBAL",10)
+THEN
+	RESPONSE #100
+		TriggerActivation("Tranbd0105",FALSE)
+		SetGlobal("C#AfHSoD_RevisedEnd","GLOBAL",10)
+//		ActionOverride("bdff1709",StartDialogNoSet(Player1))
+END
+
+IF
+	Global("C#AfHSoD_PeacefulEnd","bd6000",1)
+THEN
+	RESPONSE #100
+		ChangeEnemyAlly("bdbence",NEUTRAL)
+		ActionOverride("bdbence",EscapeArea())
+		ActionOverride("bdschae2",EscapeArea())
+		SetGlobal("C#AfHSoD_PeacefulEnd","bd6000",2)
+END

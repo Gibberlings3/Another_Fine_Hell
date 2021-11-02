@@ -1,0 +1,60 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("witness",DestroySelf())
+		ActionOverride("witness_guard",DestroySelf())
+		ActionOverride("bdbence",DestroySelf())
+		ActionOverride("bence_guard",DestroySelf())
+		ActionOverride("Entar Guard 1",MoveToPoint([1101.627]))
+		ActionOverride("Entar Guard 2",MoveToPoint([1125.669]))
+		SmallWait(6)
+		ActionOverride("bdentar",MoveToPoint([1042.658])
+		ActionOverride("bdff1697",MoveToPoint([824.686]))
+		ActionOverride("player_guard",MoveToPoint([841.762]))
+		ActionOverride("bdff1697",MoveToPoint([758.714]))
+		ActionOverride("bdbelt",Face(E))
+		PlaySound("AMBDLBOO")
+		Wait(2)
+		FadeToColor([30.0],0)
+		ActionOverride("bdbelt",MoveToPoint([933.702]))
+		MoveToPoint([763.761])
+		ActionOverride("bdbelt",DestroySelf())
+		ActionOverride("bdentar",DestroySelf())
+		ActionOverride("bdeltan",DestroySelf())
+		ActionOverride("Entar Guard 1",DestroySelf())
+		ActionOverride("Entar Guard 2",DestroySelf())
+		Wait(2)
+		ActionOverride(Player2,LeaveAreaLUA("c#afh2","",[652.441],NE))
+		ActionOverride(Player3,LeaveAreaLUA("c#afh2","",[717.461],NE))
+		ActionOverride(Player4,LeaveAreaLUA("c#afh2","",[599.410],NE))
+		ActionOverride(Player5,LeaveAreaLUA("c#afh2","",[779.483],N))
+		ActionOverride(Player6,LeaveAreaLUA("c#afh2","",[826.491],N))
+		LeaveAreaLUAPanic("c#afh2","",[707.414],NE)
+		LeaveAreaLUA("c#afh2","",[707.414],NE)
+		MultiPlayerSync()
+		Wait(1)
+		CreateCreature("BDELTAN",[793.388],S)  // Duke Eltan
+		CreateCreature("c#afhblt",[732.360],S)
+		CreateCreature("c#afhent",[846.442],SW)
+		CreateCreature("BDLIIA",[669.361],SE)  // Liia Jannath
+		ApplySpellRES("bdunhide",Player2)  // No such index
+		ApplySpellRES("bdunhide",Player3)  // No such index
+		ApplySpellRES("bdunhide",Player4)  // No such index
+		ApplySpellRES("bdunhide",Player5)  // No such index
+		ApplySpellRES("bdunhide",Player6)  // No such index
+		DisableAI(Player1,FALSE)
+		DisableAI(Player2,FALSE)
+		DisableAI(Player3,FALSE)
+		DisableAI(Player4,FALSE)
+		DisableAI(Player5,FALSE)
+		DisableAI(Player6,FALSE)
+		ReallyForceSpellRES("bdremove",Myself)  // No such index
+		SmallWait(5)
+		FadeFromColor([20.0],0)
+		SmallWait(20)
+		Wait(1)
+		EndCutSceneMode()
+END
+

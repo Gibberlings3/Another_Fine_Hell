@@ -1,0 +1,28 @@
+/* script of PC's "bed" */
+
+
+
+IF
+	Clicked([ANYONE])
+	GlobalGT("C#AfH_jail_visitors","c#afh3",0)  
+	GlobalLT("C#AfH_jail_visitors","c#afh3",5)  
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,@125) 
+END
+
+IF
+	Clicked([ANYONE])
+	Global("C#AfH_jail_visitors","c#afh3",6)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AfH_jail_visitors","c#afh3",8)
+		DisplayStringHead(Myself,@126) 
+END
+
+IF
+	Clicked([ANYONE])
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,#%eet_2%69283)
+END

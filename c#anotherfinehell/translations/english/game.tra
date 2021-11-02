@@ -1,0 +1,39 @@
+/* c#anotherfinehell.tp2 */
+@0  = ~The Council of Four might not be willing to stand by you, but I always will. Now let's get some distance between you and Baldur's Gate, all right?~
+@1  = ~It may have looked different from inside your palace room, but you have more friends than you knew.~
+@2  = ~I'm pretty sure this is far enough from Baldur's Gate for now. Can we take a break, just for a minute?~
+@3  = ~Request to the Ambassador of the Cowled Wizards~
+@4  = ~This is the request to the Ambassador of the Cowled Wizards by the Dukes of Baldur's Gate, to support you in your undertaking of finding the means to close the portal to Avernus beneath Dragonspear Castle once and for all.
+You are supposed to travel to Athkatla in Amn and show this to a representative of the Coweld Wizards to seek the help of an Incantatrix.~
+/*
+@5  = 
+@6  = 
+@7  = 
+@8  = 
+@9  = 
+*/
+
+/* add_bdchains.baf */
+@100 = ~You saved us!~
+@101 = ~What have you done below Dragonspear Castle?~
+@102 = ~You saved Bridgefort from the crusade. You saved us all from Caelar!~
+@103 = ~Here comes our hero!~
+@104 = ~Be our hero! We don't need another Sarevok!~
+@105 = ~You saved us all!~
+@106 = ~Hooray to the victorious Flaming Fist!~
+@107 = ~A portal to Avernus! May the gods have mercy on our souls!~
+@108 = ~Caelar is gone! None shall mourn her passing!~
+@109 = ~Hooray to our hero!~
+@110 = ~<CHARNAME> made a pact with the fiends!~
+@111 = ~Bhaalchild! We do not trust you!~
+@112 = ~Are you another Sarevok? We will see through you, child of Bhaal!~
+
+/* c#afh3a.baf */
+@120 = ~You make your way on your own, quickly before the other soldiers find their dead comrade.~
+@121 = ~The floor below bursts of soldiers, here to protect you - and probably to watch your whereabouts, too.~
+@122 = ~There is nothing useful you can do downstairs - better prepare for your departure and rest until it is time to go.~
+
+/* c#afh3bd.baf */
+@125 = ~The moment you want to prepare for rest, someone is coming up the stairs.~
+@126 = ~You prepare for rest.~
+

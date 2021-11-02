@@ -1,0 +1,431 @@
+BACKUP ~c#anotherfinehell/backup~
+AUTHOR ~##~ 
+
+
+VERSION ~Alpha_211101~
+
+README ~c#anotherfinehell/readme.anotherfinehell.%LANGUAGE%.txt~ ~c#anotherfinehell/readme.anotherfinehell.english.txt~
+
+AUTO_TRA ~c#anotherfinehell/translations/autotra/%s~
+
+ALWAYS
+
+/* check for a ready SoD */
+
+ACTION_IF ((FILE_EXISTS ~dlc/sod-dlc.zip~) OR (FILE_EXISTS ~sod-dlc.zip~)) THEN BEGIN
+  FAIL @100008 /* ~Modmerge or Argent's DLC Merger is required before mods can be installed on this game.~ */
+END
+
+  INCLUDE ~c#anotherfinehell/lib/get_respone_sstrrefs.tph~
+
+  INCLUDE ~c#anotherfinehell/lib/extra_regexp_vars.tph~
+  OUTER_SPRINT newline ~%WNL%%LNL%%MNL%%TAB% ~
+
+OUTER_SET eet_200000 = GAME_IS ~eet~ ? 200000 : 0
+
+ACTION_IF GAME_IS ~bgee~ THEN BEGIN
+  OUTER_SPRINT ~eet_2~ ~~
+  INCLUDE ~c#anotherfinehell/lib/g3_bgee_cpmvars.tpa~
+END
+ACTION_IF GAME_IS ~eet~ THEN BEGIN
+  OUTER_SPRINT ~eet_2~ ~2~
+  INCLUDE ~EET/other/cpmvars/eet_cpmvars.tpa~
+END
+
+ACTION_IF GAME_IS ~bgee~ THEN BEGIN
+  OUTER_SPRINT ~eet_2~ ~~
+END
+ACTION_IF GAME_IS ~eet~ THEN BEGIN
+  OUTER_SPRINT ~eet_2~ ~2~
+END
+
+//////////////////////////////////////////////////////////////////////
+/* all following actions are only processed ONCE for the whole mod, independent of un- and reinstalling of single components */
+
+ACTION_IF !FILE_EXISTS ~c#anotherfinehell/install/c#anotherfinehellinstall.mrk~ BEGIN
+
+    /* Copies tra files into the autotra-folder (to leave the originals untouched) */
+    DEFINE_ACTION_FUNCTION autotra_workaround BEGIN
+      COPY ~c#anotherfinehell/translations/english~  ~c#anotherfinehell/translations/autotra/%LANGUAGE%~
+      COPY ~c#anotherfinehell/translations/%LANGUAGE%~  ~c#anotherfinehell/translations/autotra/%LANGUAGE%~
+    END
+
+    LAF autotra_workaround END
+
+  ACTION_DEFINE_ARRAY fl#noconvert BEGIN setup END
+
+  ACTION_DEFINE_ARRAY fl#reload BEGIN game END
+
+    LAF HANDLE_CHARSETS
+      INT_VAR
+        infer_charsets = 1
+      STR_VAR
+        tra_path = EVAL ~c#anotherfinehell/translations/autotra~
+        noconvert_array = fl#noconvert
+        reload_array = fl#reload
+    END
+
+
+//CamDawgs CD_STATE_NOTVALID 
+    APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~
+
+
+
+  COPY ~c#anotherfinehell/install/component.xx~ ~c#anotherfinehell/install/c#anotherfinehellinstall.mrk~
+
+  END // c#sodtweaksinstall.mrk
+
+ //reloading of tras:
+  LOAD_TRA ~c#anotherfinehell/translations/autotra/english/game.tra~
+  LOAD_TRA ~c#anotherfinehell/translations/autotra/%LANGUAGE%/game.tra~
+  LOAD_TRA ~c#anotherfinehell/translations/autotra/english/journal.tra~
+  LOAD_TRA ~c#anotherfinehell/translations/autotra/%LANGUAGE%/journal.tra~
+
+END //ALWAYS
+
+
+LANGUAGE ~English~
+         ~english~   
+         ~c#anotherfinehell/translations/english/setup.tra~
+	 ~c#anotherfinehell/translations/english/game.tra~
+	 ~c#anotherfinehell/translations/english/journal.tra~
+
+BEGIN @100000 /* ~Another Fine Hell - Optional Ending for SoD and BGII Closure~ */ DESIGNATED 0
+LABEL C#AnotherFineHell-Main
+	REQUIRE_PREDICATE (GAME_INCLUDES ~sod~) @100001 /* ~This component is only compatible with SoD and EET.~ */
+	FORBID_COMPONENT ~c#sodtweaks.tp2~ ~12~ @100002 /* ~Other optional ending for SoD is already installed.~ */
+	FORBID_COMPONENT ~c#sodtweaks.tp2~ ~13~ @100002 /* ~Other optional ending for SoD is already installed.~ */
+	FORBID_COMPONENT ~c#sodtweaks.tp2~ ~14~ @100002 /* ~Other optional ending for SoD is already installed.~ */
+	FORBID_COMPONENT ~c#sodtweaks.tp2~ ~15~ @100002 /* ~Other optional ending for SoD is already installed.~ */
+	FORBID_COMPONENT ~EET_end.tp2~ ~0~ @100003 /* ~This mod needs to be installed before EET_End.~ */
+	FORBID_COMPONENT ~EET_end.tp2~ ~1~ @100003 /* ~This mod needs to be installed before EET_End.~ */
+
+ADD_JOURNAL EXISTING TITLE (@90007) @90001 USING ~c#anotherfinehell/translations/autotra/%LANGUAGE%/journal.tra~
+
+<<<<<<<< .../inlined/journal_handling.tph
+>>>>>>>>
+/* Disturbing Implications */
+OUTER_SET strref_59626 = eet_200000 + 59626
+/* It wasn't me */
+OUTER_SET strref_59734 = eet_200000 + 59734
+/* Skie's Soul */
+OUTER_SET strref_70073 = eet_200000 + 70073
+APPEND_OUTER - ~.../inlined/journal_handling.tph~ 
+"ADD_JOURNAL EXISTING TITLE (#%strref_59626%) @90000 @90004 @90005 USING ~c#anotherfinehell/translations/autotra/%LANGUAGE%/journal.tra~
+ADD_JOURNAL EXISTING TITLE (#%strref_59734%) @90008 USING ~c#anotherfinehell/translations/autotra/%LANGUAGE%/journal.tra~
+ADD_JOURNAL EXISTING TITLE (#%strref_70073%) @90002 @90003 @90006 USING ~c#anotherfinehell/translations/autotra/%LANGUAGE%/journal.tra~"
+INCLUDE ~.../inlined/journal_handling.tph~
+
+EXTEND_BOTTOM ~bd4100.bcs~   ~c#anotherfinehell/scripts/add_bd4100.baf~
+EVALUATE_BUFFER
+EXTEND_TOP ~bd6000.bcs~   ~c#anotherfinehell/scripts/add_bd6000.baf~
+EVALUATE_BUFFER
+EXTEND_BOTTOM ~bdchains.bcs~   ~c#anotherfinehell/scripts/add_bdchains.baf~
+EVALUATE_BUFFER
+EXTEND_TOP ~bdstone.bcs~   ~c#anotherfinehell/scripts/add_bdstone.baf~
+EVALUATE_BUFFER
+EXTEND_BOTTOM ~bdireni.baf~   ~c#anotherfinehell/scripts/bdireni_visit.baf~
+EVALUATE_BUFFER
+EXTEND_BOTTOM ~bdfist61.bcs~   ~c#anotherfinehell/scripts/add_bdfist63.baf~
+EXTEND_BOTTOM ~bdfist63.bcs~   ~c#anotherfinehell/scripts/add_bdfist63.baf~
+
+COMPILE ~c#anotherfinehell/scripts/c#afh61.baf~ EVALUATE_BUFFER
+COMPILE ~c#anotherfinehell/scripts/c#afh62.baf~ EVALUATE_BUFFER
+COMPILE ~c#anotherfinehell/scripts/c#afh64.baf~ EVALUATE_BUFFER
+COMPILE ~c#anotherfinehell/scripts/c#afh6b.baf~ EVALUATE_BUFFER
+COMPILE ~c#anotherfinehell/scripts/c#afhvis.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~c#afhvis.baf~   ~c#anotherfinehell/scripts/bdireni_visit.baf~
+EVALUATE_BUFFER
+
+MOVE ~c#anotherfinehell/scripts/c#afhvis.baf~ ~c#anotherfinehell/scripts/c#afhvi1.baf~
+COMPILE ~c#anotherfinehell/scripts/c#afhvi1.baf~ EVALUATE_BUFFER
+
+COPY ~c#anotherfinehell/sound/c#ablank.wav~ ~override~
+
+<<<<<<<< .../inlined/string_set_afh.tph
+>>>>>>>>
+OUTER_SET strref_69883 = eet_200000 + 69883
+OUTER_SET strref_69885 = eet_200000 + 69885
+OUTER_SET strref_39779 = eet_200000 + 39779
+APPEND_OUTER - ~.../inlined/string_set_afh.tph~ 
+"/* adapt Imoen's lines at the end of SoD */
+//BDIMOEN 102
+/* ~The Council of Four might not be willing to stand by you, but I always will. Now let's get some distance between you and Duke Silvershield, all right?~ */
+STRING_SET %strref_69883% @0
+//BDIMOEN 104
+/* ~It may have looked different from your cell, but you have more friends than you knew.~ */
+STRING_SET %strref_69885% @1
+//BDIMOEN 129
+/* ~I'm pretty sure the Flaming Fist isn't on our trail. Can we take a break, just for a minute?~ */
+STRING_SET %strref_39779% @2"
+INCLUDE ~.../inlined/string_set_afh.tph~
+
+/* change transitions in the FF dialogue that brings PC to sewer exit BDFF1709.dlg */
+// List of all potential response strrefs to check
+ACTION_DEFINE_ASSOCIATIVE_ARRAY response_strrefs BEGIN
+  ~%eet_2%69849~ => 1
+  ~%eet_2%69854~ => 1
+END
+  
+COPY_EXISTING ~BDFF1709.dlg~ ~override~
+  // scanning listed dialog states
+  PATCH_FOR_EACH state IN 2 4 BEGIN
+    LPF GET_RESPONSE_STRREFS INT_VAR state RET strrefs RET_ARRAY strrefs END
+    TEXT_SPRINT indices ~~  // a temporary variable for building the index list
+    FOR (i = 0; i < strrefs; ++i) BEGIN
+      SET value = $strrefs(~%i%~)
+      // Include index only if strref is listed in the response_strrefs array
+      PATCH_IF (VARIABLE_IS_SET $response_strrefs(~%value%~)) BEGIN
+        TEXT_SPRINT indices ~%indices% %i%~ // building list of indices
+      END
+    END
+    // prevent adding a trigger if index list is empty
+    PATCH_IF (~%indices%~ STR_EQ ~~) BEGIN
+      TEXT_SPRINT indices %IF ~False()~%
+    END
+    // initialize variables responses_39, responses_40, ...
+    // EVAL is used to create the variable name dynamically
+    TEXT_SPRINT EVAL ~responses_%state%~ ~%indices%~
+    PATCH_PRINT ~Variable %state%: %indices%~
+  END
+BUT_ONLY
+
+COMPILE EVALUATE_BUFFER ~c#anotherfinehell/dialogue/anotherfinehell_sod.d~
+COMPILE EVALUATE_BUFFER ~c#anotherfinehell/dialogue/at_portal_sod.d~
+
+/* use bdcut61.bcs to remove all non-default NPCs. This is compatible with mod NPCs Need to prevent Jaheira, Khalid, Minsc, and Dynaheir to leave; as well as the transition to bd0112 because that is already done in this case.
+Remaining group will now be moved into PC's quarters (custom area) */
+COPY_EXISTING ~bdcut61.bcs~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~\(InParty("JAHEIRA")\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~False()~
+		END
+		SPRINT textToReplace ~\(InParty("KHALID")\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~False()~
+		END
+		SPRINT textToReplace ~\(InParty("MINSC")\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~False()~
+		END
+		SPRINT textToReplace ~\(InParty("DYNAHEIR")\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~False()~
+		END
+		SPRINT textToReplace ~\("bd0112"\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~"c#afh3"~
+		END
+		SPRINT textToReplace ~\(855\.370\],S\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~449.668],NE~
+		END
+		SPRINT textToReplace ~\(950\.375\],S\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~495.702],NE~
+		END
+		SPRINT textToReplace ~\(920\.305\],S\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~554.743],NE~
+		END
+		SPRINT textToReplace ~\(1035\.315\],S\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~621.732],N~
+		END
+		SPRINT textToReplace ~\(1000\.255\],S\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~671.702],N~
+		END
+		SPRINT textToReplace ~\(984\.414\],SW\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~396.389],SE~
+		END
+		SPRINT textToReplace ~\(DayNight(DUSK_END)[%newline%]*SetGlobal("bd_npc_camp_chapter","global",7)[%newline%]*IncrementChapter("chptxt13")\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~FadeFromColor([20.0],0)~
+		END
+	END
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~bdcut61a.bcs~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~\(PlaySound("AMBDLBOO")\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~PlaySound("AMBDLCHE")~
+		END
+		SPRINT textToReplace ~\(CreateCreatureImpassable("bdimoitm",\[735\.235\],S)[%newline%]*ActionOverride("bdimoitm",TakeCreatureItems(Player1,WEAPONS))\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~~
+		END
+		SPRINT textToReplace ~\(SetGlobal("BD_STOP_OT"\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~SetGlobal("C#AfHSoD_BD_STOP_OT"~
+		END
+	END
+BUT_ONLY_IF_IT_CHANGES
+
+
+/* edit bdwaterf.bcs so that Bence and Corwin spawn near the waterfall in bd6000.bcs */
+COPY_EXISTING ~bdwaterf.bcs~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+
+		SPRINT textToReplace ~\(Global("bd_player_exiled","global",0)\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~~
+		END
+	END
+BUT_ONLY_IF_IT_CHANGES
+
+/* areas */
+/* Palace third floor */
+COPY ~c#anotherfinehell/area~ ~override~
+
+/* ambients */
+COPY_EXISTING ~GAHOUSE2.WAV~ ~override~
+COPY_EXISTING ~GALGINT2.WAV~ ~override~
+
+/* area script */
+COMPILE ~c#anotherfinehell/scripts/c#afh2.baf~ EVALUATE_BUFFER
+COMPILE ~c#anotherfinehell/scripts/c#afh3.baf~ EVALUATE_BUFFER
+COMPILE ~c#anotherfinehell/scripts/c#afh3a.baf~ EVALUATE_BUFFER
+COMPILE ~c#anotherfinehell/scripts/c#afh3bd.baf~ EVALUATE_BUFFER
+
+/* Duke Belt for ending */
+  COPY_EXISTING ~bdbelt.cre~ ~override/c#afhblt.cre~
+    WRITE_EVALUATED_ASCII 0x280 ~c#afhblt~ #32   // Scriptname
+    WRITE_EVALUATED_ASCII 0x248 ~c#afhblt~ #8   // Override Skript
+    WRITE_EVALUATED_ASCII 0x250 ~initdlg~ #8   // Class Skript
+    WRITE_EVALUATED_ASCII 0x2cc ~c#afhblt~ #8   // Dialogue
+/* Duke Silvershield for ending */
+  COPY_EXISTING ~bdentar.cre~ ~override/c#afhent.cre~
+    WRITE_EVALUATED_ASCII 0x280 ~c#afhent~ #32   // Scriptname
+    WRITE_EVALUATED_ASCII 0x248 ~c#afhent~ #8   // Override Skript
+    WRITE_EVALUATED_ASCII 0x2cc ~c#afhent~ #8   // Dialogue
+
+
+/////////////////////////////////////////////////////////////////////
+
+BEGIN @100004 /* ~Get the Hells Out - Quest Adaption with Extended BGII Content~ */ DESIGNATED 1
+LABEL C#AnotherFineHell-Extended
+/*
+REQUIRE_PREDICATE (MOD_IS_INSTALLED ~c#anotherfinehell.tp2~ ~0~) @100005 /* ~AfH main component needs to be installed.~ */
+*/
+REQUIRE_COMPONENT ~c#anotherfinehell.tp2~ ~0~ @100005
+
+/* item: official letter to Athkatlian authorities */
+  CREATE ~ITM~ VERSION ~V1  ~ ~c#afhpss~
+  COPY ~override/c#afhpss.itm~ ~override/c#afhpss.itm~
+    // Item Header: //
+      SAY NAME1  @3		   // Unidentified Name (strref)
+      SAY NAME2 @3                 // Identified Name (strref)
+      WRITE_LONG   0x0018 45         // Flags
+      WRITE_SHORT  0x001c 11         // Item type
+      WRITE_ASCIIE 0x0022 ~  ~ #2    // Item animation
+      WRITE_SHORT  0x0038 1          // Stack amount
+      WRITE_ASCIIE 0x003a ~IMISC8P~ // Inventory icon (BAM)
+      WRITE_ASCIIE 0x0044 ~GSCRL01~  // Ground icon (BAM)
+      SAY IDENTIFIED_DESC @4       // Identified Description (strref)
+      WRITE_ASCIIE 0x0058 ~CMISC8P~ // Description icon (BAM)
+
+COMPILE EVALUATE_BUFFER ~c#anotherfinehell/dialogue/portal_dormant_sod.d~
+
+/* animation of dormant portal remains */
+COPY_EXISTING ~bdcut59b.bcs~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+		SPRINT textToReplace ~\(CloseDoor("Door04")\)~
+		COUNT_REGEXP_INSTANCES ~%textToReplace%~ num_matches
+		PATCH_IF (num_matches > 0) BEGIN
+			REPLACE_TEXTUALLY ~%textToReplace%~ ~~
+		END
+	END
+BUT_ONLY_IF_IT_CHANGES
+
+///////////////////////////////////////////////////////////////////////
+
+BEGIN @100006 /* ~PC's and Imoen's chest in Palace should have their content~ */ DESIGNATED 2
+LABEL C#AnotherFineHell-ImoensChest
+/*
+REQUIRE_PREDICATE (MOD_IS_INSTALLED ~c#anotherfinehell.tp2~ ~0~) @100005 /* ~AfH main component needs to be installed.~ */
+*/
+REQUIRE_COMPONENT ~c#anotherfinehell.tp2~ ~0~ @100005
+
+/* move PC's stuff */
+EXTEND_BOTTOM ~c#afh3.bcs~ ~c#anotherfinehell/scripts/c#afh3_itemtransfer.baf~ EVALUATE_BUFFER
+
+/* Move Imoen's stuff as well */
+<<<<<<<< .../move_imoens_stuff_c#afh3.baf
+IF
+	Global("C#I4E_MoveImoensStuff","GLOBAL",0)
+	Global("C#AfHSoD_MoveImoensStuff","GLOBAL",0)
+THEN
+	RESPONSE #100
+		MoveContainerContents("BD0103*Imoen_equipment","c#afh3*Imoen_equipment")
+		SetGlobal("C#AfHSoD_MoveImoensStuff","GLOBAL",1)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~c#afh3.bcs~ ~.../move_imoens_stuff_c#afh3.baf~ EVALUATE_BUFFER
+
+/* Move Imoen's stuff back into original palace 3rd floor in case player visits it (via a mod or whatever) */
+<<<<<<<< .../move_imoens_stuff_bd0103.baf
+IF
+	Global("C#I4E_MoveImoensStuff","GLOBAL",0)
+	Global("C#AfHSoD_MoveImoensStuff","GLOBAL",1)
+THEN
+	RESPONSE #100
+		MoveContainerContents("c#afh3*Imoen_equipment","BD0103*Imoen_equipment")
+		SetGlobal("C#AfHSoD_MoveImoensStuff","GLOBAL",2)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~bd0103.bcs~ ~.../move_imoens_stuff_bd0103.baf~ EVALUATE_BUFFER
+
+/* crossmod with Imoen4Ever : move Imoen's chest from Campside back into palace */
+ACTION_IF MOD_IS_INSTALLED ~imoen_forever.tp2~ ~20~ THEN BEGIN 
+PRINT @100007 /* ~Imoen 4 Ever: "Imoen's chest moves with the campaign, too" detected.~ */
+
+<<<<<<<< .../move_imoens_stuff_i4e_c#afh3.baf
+IF
+	Global("C#I4E_bdimoen_chest","GLOBAL",1)
+	!Global("C#I4E_MoveImoensStuff","GLOBAL",4)
+	Global("C#I4E_MoveImoensStuff","GLOBAL",3)
+THEN
+	RESPONSE #100
+		MoveContainerContents("BD3000*C#ImoensChest","c#afh3*Imoen_equipment")
+		SetGlobal("C#I4E_MoveImoensStuff","GLOBAL",4)
+		Continue()
+END
+>>>>>>>>
+EXTEND_BOTTOM ~c#afh3.bcs~ ~.../move_imoens_stuff_i4e_c#afh3.baf~ EVALUATE_BUFFER
+
+/* Move stuff back in case player visits the big coalition camp area again */
+<<<<<<<< .../move_imoens_stuff_i4e_bd3000.baf
+IF
+	Global("C#I4E_bdimoen_chest","GLOBAL",1)
+	!Global("C#I4E_MoveImoensStuff","GLOBAL",3)
+	Global("C#I4E_MoveImoensStuff","GLOBAL",4)
+THEN
+	RESPONSE #100
+		MoveContainerContents("c#afh3*Imoen_equipment","BD3000*C#ImoensChest")
+		SetGlobal("C#I4E_MoveImoensStuff","GLOBAL",3)
+		Continue()
+END
+>>>>>>>>
+EXTEND_BOTTOM ~bd3000.bcs~ ~.../move_imoens_stuff_i4e_bd3000.baf~ EVALUATE_BUFFER
+
+END //I4E

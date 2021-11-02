@@ -1,0 +1,12 @@
+IF
+	Global("C#AfHSoD_RevisedEnd","GLOBAL",8)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("C#AfHSoD_RevisedEnd","GLOBAL",9)
+		ClearAllActions()
+		StartCutSceneMode()
+		StartCutSceneEx("bdcut61",TRUE)
+		SetInterrupt(TRUE)
+END
+

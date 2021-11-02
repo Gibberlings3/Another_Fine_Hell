@@ -1,0 +1,21 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		FadeToColor([20.0],0)
+		Wait(1)
+		ActionOverride(Player2,LeaveAreaLUA("bd6000","",[1287.1897],NE))
+		ActionOverride(Player3,LeaveAreaLUA("bd6000","",[1212.1895],NE))
+		ActionOverride(Player4,LeaveAreaLUA("bd6000","",[1258.1929],NE))
+		ActionOverride(Player5,LeaveAreaLUA("bd6000","",[1176.1927],NE))
+		ActionOverride(Player6,LeaveAreaLUA("bd6000","",[1225.1956],NE))
+		LeaveAreaLUAPanic("bd6000","",[1246.1851],NE)
+		LeaveAreaLUA("bd6000","",[1246.1851],NE)
+		MultiPlayerSync()
+		FadeFromColor([20.0],0)
+		Wait(1)
+		MoveViewObject(Player1,INSTANT)
+		SmallWait(25)
+		EndCutSceneMode()
+END

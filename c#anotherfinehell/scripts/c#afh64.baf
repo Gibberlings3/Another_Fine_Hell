@@ -1,0 +1,93 @@
+IF  //##
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		SetGlobal("C#AfH_jail_visitors","c#afh3",9) 
+		SmallWait(20)
+		MultiPlayerSync()
+		Rest()
+		ActionOverride(Player2,Rest())
+		ActionOverride(Player3,Rest())
+		ActionOverride(Player4,Rest())
+		ActionOverride(Player5,Rest())
+		ActionOverride(Player6,Rest())
+		DayNight(MIDNIGHT)
+		JumpToPoint([215.396])
+		Face(SE)
+		SetSequence(SEQ_SLEEP)
+		ActionOverride(Player2,JumpToPoint([449.668])
+		ActionOverride(Player2,Face(NE))
+		ActionOverride(Player2,SetSequence(SEQ_SLEEP))
+		ActionOverride(Player3,JumpToPoint([495.702]))
+		ActionOverride(Player3,Face(NE))
+		ActionOverride(Player3,SetSequence(SEQ_SLEEP))
+		ActionOverride(Player4,JumpToPoint([554.743]))
+		ActionOverride(Player4,Face(NE))
+		ActionOverride(Player4,SetSequence(SEQ_SLEEP))
+		ActionOverride(Player5,JumpToPoint([621.732]))
+		ActionOverride(Player5,Face(N))
+		ActionOverride(Player5,SetSequence(SEQ_SLEEP))
+		ActionOverride(Player6,JumpToPoint([671.702]))
+		ActionOverride(Player6,Face(N))
+		ActionOverride(Player6,SetSequence(SEQ_SLEEP))
+		Wait(2)
+		MoveViewObject(Player1,INSTANT)
+		Wait(3)
+END
+
+IF
+	!Gender(Player1,FEMALE)
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		FadeFromColor([20.0],0)
+		DisplayStringHead(Player1,16197)  // [SLEEPING MAN 3] ZZZZzzzzzz...
+		SmallWait(35)
+END
+
+IF
+	Gender(Player1,FEMALE)
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		FadeFromColor([20.0],0)
+		DisplayStringHead(Player1,16198)  // [SLEEPING WOMAN 3] ZZZzzzzz...
+		SmallWait(35)
+END
+
+/* ##
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		CreateCreature("bdireni",[596.220],NW)
+		SmallWait(16)
+		ActionOverride("bdireni",MoveToPoint([423.333]))
+		Wait(1)
+		SmallWait(5)
+		EndCutSceneMode()
+END
+*/
+IF  //##
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		CreateCreature("bdireni",[596.220],NW)
+		SmallWait(16)
+		ActionOverride("bdireni",MoveToPoint([423.333]))
+		Wait(1)
+		SetGlobal("C#AfH_jail_visitors","c#afh3",10) 
+		SetSequence(SEQ_AWAKE)
+		SmallWait(4)
+		Face(SW)
+		SmallWait(1)
+		JumpToPoint([184.428])
+		SetSequence(SEQ_READY)
+		FaceObject("bdireni")  
+		SmallWait(6)
+		ActionOverride("bdireni",StartDialogNoSet(Player1))
+END
+

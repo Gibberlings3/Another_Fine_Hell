@@ -1,0 +1,24 @@
+IF
+	AreaCheck("c#afh3")  
+	Global("C#AfH_visit_player","locals",0)
+	!Detect(Player1)
+THEN
+	RESPONSE #100
+		MoveToObject(Player1)
+END
+
+/* not needed
+IF
+	AreaCheck("c#afh3")  
+	Global("C#AfH_visit_player","locals",0)
+	Detect(Player1)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		FaceObject(Player1)
+		SmallWait(5)
+		PlaySong(83)
+		StartDialogNoSet(Player1)
+		SetInterrupt(TRUE)
+END
+*/

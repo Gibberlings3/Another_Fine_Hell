@@ -1,0 +1,6 @@
+IF
+	GlobalGT("C#AfHSoD_PeacefulEnd","bd6000",0)
+THEN
+	RESPONSE #100
+		DestroySelf()
+END

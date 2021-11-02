@@ -1,0 +1,39 @@
+/* script for exits from 3rd level palace */
+
+
+IF
+	Clicked([ANYONE])
+	Dead("BDFF1709")
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,@120) 
+		SetGlobal("bd_plot","global",640)
+		StartCutSceneMode()
+		StartCutScene("c#afh6b")
+END
+
+IF
+	Clicked([ANYONE])
+	InMyArea("BDFF1709")
+	!StateCheck("BDFF1709",CD_STATE_NOTVALID)
+	!Dead("BDFF1709")
+THEN
+	RESPONSE #100
+		ActionOverride("BDFF1709",StartDialogNoSet(Player1))
+END
+
+IF
+	Clicked([ANYONE])
+	RandomNum(2,1)
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,@121)
+END
+
+IF
+	Clicked([ANYONE])
+	RandomNum(2,2)
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,@122)
+END

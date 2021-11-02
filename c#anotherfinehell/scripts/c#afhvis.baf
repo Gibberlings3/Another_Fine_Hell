@@ -1,0 +1,32 @@
+IF
+	AreaCheck("c#afh3")
+	GlobalGT("bd_plot","global",599)
+	Global("C#AfH_visit_player","locals",0)
+	!Detect(Player1)
+THEN
+	RESPONSE #100
+		MoveToObject(Player1)
+END
+
+IF
+	AreaCheck("c#afh3")
+	GlobalGT("bd_plot","global",599)
+	Global("C#AfH_visit_player","locals",0)
+	Detect([PC])
+THEN
+	RESPONSE #100
+		FaceObject(Player1)
+		SmallWait(5)
+		StartDialogNoSet(Player1)
+END
+
+IF
+	AreaCheck("c#afh3")
+	GlobalGT("bd_plot","global",599)
+	OR(2)
+		Global("C#AfH_visit_player","locals",1)
+		GlobalGT("C#AfH_jail_visitors","c#afh3",14)
+THEN
+	RESPONSE #100
+		EscapeArea()
+END

@@ -1,0 +1,39 @@
+IF
+	Global("C#AfHSoD_PlayerChest","MYAREA",0)
+	Global("BD_PlayerChest","GLOBAL",0)
+THEN
+	RESPONSE #100
+		MoveContainerContents("BD0103*PlayerChest00","c#afh3*PlayerChest00")
+		SetGlobal("C#AfHSoD_PlayerChest","MYAREA",1)
+		Continue()
+END
+
+IF
+	Global("BD_PlayerChest","GLOBAL",1)
+	Global("C#AfHSoD_PlayerChest","MYAREA",0)
+THEN
+	RESPONSE #100
+		MoveContainerContents("BD1000*PlayerChest00","c#afh3*PlayerChest00")
+		SetGlobal("C#AfHSoD_PlayerChest","MYAREA",1)
+		Continue()
+END
+
+IF
+	Global("BD_PlayerChest","GLOBAL",2)
+	Global("C#AfHSoD_PlayerChest","MYAREA",0)
+THEN
+	RESPONSE #100
+		MoveContainerContents("BD7100*PlayerChest00","c#afh3*PlayerChest00")
+		SetGlobal("C#AfHSoD_PlayerChest","MYAREA",1)
+		Continue()
+END
+
+IF
+	Global("BD_PlayerChest","GLOBAL",3)
+	Global("C#AfHSoD_PlayerChest","MYAREA",0)
+THEN
+	RESPONSE #100
+		MoveContainerContents("BD3000*PlayerChest00","c#afh3*PlayerChest00")
+		SetGlobal("C#AfHSoD_PlayerChest","MYAREA",1)
+		Continue()
+END

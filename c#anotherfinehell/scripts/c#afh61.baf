@@ -1,0 +1,21 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		Wait(1)
+		ActionOverride(Player2,LeaveAreaLUA("bd0112","",[855.370],S))
+		ActionOverride(Player3,LeaveAreaLUA("bd0112","",[950.375],S))
+		ActionOverride(Player4,LeaveAreaLUA("bd0112","",[920.305],S))
+		ActionOverride(Player5,LeaveAreaLUA("bd0112","",[1035.315],S))
+		ActionOverride(Player6,LeaveAreaLUA("bd0112","",[1000.255],S))
+		LeaveAreaLUAPanic("bd0112","",[984.414],SW)
+		LeaveAreaLUA("bd0112","",[984.414],SW)
+		MultiPlayerSync()
+		Wait(1)
+		DayNight(DUSK_END)
+		SetGlobal("bd_npc_camp_chapter","global",7)
+		IncrementChapter("chptxt13")
+		SetCursorState(TRUE)
+		EndCutSceneMode()
+END

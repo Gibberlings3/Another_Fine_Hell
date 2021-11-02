@@ -1,0 +1,315 @@
+/* Note to translators: all comments are meant as info and service, without expectations that exact phrases from the original game / my tweakpack should be used. */
+/* Please leave the notes in as it enables me to compare translations using WinMerge. */
+
+/* @0: Corporal Bence Duncan finds PC and Skie */
+@0    = ~[Corporal Bence Duncan]You... you were responsible for Skie's safety! And now she is laying here, dead and soaked in her own blood?! She is dead! The daughter of Duke Silvershield was killed!~ [c#ablank]
+/* @1 - @13: Bence Duncan and Captain Corwin at the crime scene */
+/* @1: Same as @2 from c#sodtweaks/translations/%s/sod_revisedend.tra */
+@1    = ~[Corporal Bence Duncan]Tell us what happened!~ [c#ablank]
+/* @2: Same as @3 from c#sodtweaks/translations/%s/sod_revisedend.tra */
+@2    = ~[PC Reply]I don't know what happened - it's all a blur. But I believe to have been deceived to kill Skie. I am truly sorry.~
+/* @3: Same as @4 from c#sodtweaks/translations/%s/sod_revisedend.tra */
+@3    = ~[PC Reply]It was a mighty illusion, by a new enemy who is stalking me for some time now. Skie got caught up in it when I tried to defend myself - I am sorry.~
+@4    = ~[PC Reply]It was the Hooded Man. I think he wanted to... test something, but it eludes my mind why Skie would have to die for this.~
+/* @5: Same as @5 from c#sodtweaks/translations/%s/sod_revisedend.tra */
+@5    = ~[PC Reply]I didn't kill her, if that is what you think. This was a setup.~
+@6    = ~[PC Reply]Like HELL I was responsible - YOU were responsible. Don't blame me for YOUR incompetence!~
+/* @7: Same as @6 from c#sodtweaks/translations/%s/sod_revisedend.tra */
+@7    = ~[PC Reply]However this came to be, the danger seems to be over for now.~
+@8    = ~[Corporal Bence Duncan]There is no murder weapon - where is the murder weapon?! We need to secure the surroundings - NOW!~
+/* @9: Same as @8 from c#sodtweaks/translations/%s/sod_revisedend.tra */
+@9    = ~[Corporal Bence Duncan]You - you would have caused the blow that killed her?!~
+/* @10: NOT the same as @10 from c#sodtweaks but very similar */
+@10   = ~[Corporal Bence Duncan]This is affiliated to your evil godly heritage, I am sure of it. Just like Sarevok, all you bring to the people around you is destruction and death! The gods alone know what you did down there to survive Avernus!~
+@11   = ~[Corporal Bence Duncan]That information is of great value to Duke Silvershield. He will be more than eager to hear about who is responsible for his daughter's death!~
+@12   = ~[Corporal Bence Duncan]You insolent -~
+/* @13: NOT the same as @11 from c#sodtweaks but very similar */
+@13   = ~[Corporal Bence Duncan]Celebrations are over. This morning brings mornful events which leaves all of us sobered and with a bitter taste in the mouth despite the great victory you were crucial part in yesterday. We will depart immediately and bring Skie to the ducal clerics - and you will come with us.~
+/* @15: NOT the same as @12 from c#sodtweaks but similar */
+@14   = ~[Duke Belt]Citizens of Baldur's Gate! We are gathered to account for a great victory. Caelar is defeated! With the help of <CHARNAME>, the hero of Baldur's Gate, her malicious plans were stopped and a hellmouth was closed! All hail the hero of Baldur's Gate - and Dragonspear Castle!~ [c#ablank]
+@15   = ~[Duke Belt]But this great victory would not have been possible without the sacrifices of those that are no longer with us. We mourn the losses of our fallen soldiers, amongst them Skie Silvershield, our Duke Silvershield's daughter who was killed in mysterious circumstances. The palace priests are with the wounded now, to heal and resurrect where possible.~
+@16   = ~[female Bystander in public hearing SoD]There was a portal to Avernus? The gods help us!~
+@17   = ~[male Bystander in public hearing SoD]<CHARNAME> is a child of Bhaal! Just like Sarevok! Don't hide this from the people!~
+@18   = ~[Duke Belt]<CHARNAME>, what was a mere rumor when you defeated Sarevok is a public knowledge now - that you, too, are a child of Bhaal. Citizens of Baldur's Gate! Yes, it is true, <CHARNAME> is a child of Bhaal.~
+@19   = ~[Duke Belt]<CHARNAME>'s Bhaal heritage might come as a shock to many of us, but sometimes it needs an outstanding person to be the hero of the people. <CHARNAME> proved to be the savior of this city, and not only once, but twice!~
+/* #69760 changed */
+@20   = ~[Duke Belt]Corporal Bence Duncan bore witness to the crucial incidents involving Caelar's dangerous dealings with a portal to Avernus at Dragonspear Castle and <CHARNAME>'s heroic deeds to close it. Corporal, please share your recollections.~
+@21   = ~[Corporal Bence Duncan]Caelar and her advisor opened a portal to Avernus that lay dormant in the castle basement. It was <CHARNAME> and <PRO_HISHER> friends who not only defeated Caelar and her treacherous crusade, but did not hesitate to venture into the abyss to collect the fiend blood needed to seal the rift.~
+@22   = ~[female Bystander in public hearing SoD]<CHARNAME> descended into Avernus? And came out unscarthed?! Who would survive such a deed without losing their soul?~
+@23   = ~[Duke Belt]Despite <PRO_HISHER> Bhaal heritage, <CHARNAME> stood a shining beacon against the dangers we were facing, for the good of this city, of the whole Sword Coast! Let <CHARNAME>'s deeds be the base to judge <PRO_HIMHER> on!~
+@24   = ~[male Bystander in public hearing SoD]Huzzah to our hero! Huzzah <CHARNAME>! You are the city's protector!~
+/* #69792 changed */
+@25   = ~[Duke Belt]This is a day of victory! Now we - what is that commotion?~
+/* #69797 changed */
+@26   = ~[Duke Silvershield]My Skie! She is gone... It wasn't enough to slay her bodily and leave me childless. The murderer of my Skie destroyed her soul, too! Do you hear me, you monster? I will get to you, wherever you are!~
+@27   = ~[Duke Belt]Entar, whatever happened, let us first talk in quiet about it.~
+@28   = ~[Duke Silvershield]<CHARNAME>! You got my little girl killed! She was with you, and now her soul is gone - she is lost forever!~
+/* #69793 changed */
+@29   = ~[Duke Silvershield]Do not tell me what I want - I KNOW what I want. I want the murderer of my little Skie... I want her soul back!~
+@30   = ~[female Bystander in public hearing SoD]The Silvershield gal's soul disappeared? How is that even possible?~
+@31   = ~[male Bystander in public hearing SoD]It's the Bhaalchild! It's <CHARNAME>! In Avernus <PRO_HESHE> made a pact with the fiends and now they are taking our souls!~
+@32   = ~[female Bystander in public hearing SoD]<CHARNAME> is even more dangerous than Sarevok! The gods help us against this Bhaalchild!~
+@33   = ~[male Bystander in public hearing SoD]No, <CHARNAME> is a hero! All praise <CHARNAME>, the Bhaalspawn who will rise above all others!~
+@34   = ~[Duke Belt]Despite the tragic events, this is a day for celebration! Everyone, feast in the knowledge of our victory! - <CHARNAME>, we need to go. Let us retreat before this gets any more out of hand.~
+@35   = ~[Duke Belt]<CHARNAME>, knowledge of the danger of your bhaal heritage is spreading. Rumor has it that you made a pact with the fiends in Avernus to become more powerful.~
+@36   = ~[PC Reply]You can't be serious.~
+@37   = ~[PC Reply]Something like that was to be expected, I fear.~
+@38   = ~[PC Reply]You do not believe this yourself, do you?~
+@39   = ~[PC Reply]Hmm... not a bad idea indeed. Shame I didn't think of this sooner.~
+@40   = ~[Duke Belt]We do believe these to be mere rumors.~
+@41   = ~[PC Reply]I understand. If it helps the city to calm down, then I will go.~
+@42   = ~[PC Reply]You are sending me away? Just like that, after everything I did for Baldur's Gate?~
+@43   = ~[PC Reply]"As quietly as possible"? You don't want me to come back, do you?~
+@44   = ~[PC Reply]Where am i supposed to go?~
+@45   = ~[PC Reply]You're not telling me what to do. I'm the hero of this city and will stay as long as it pleases me.~
+@46   = ~[Duke Belt]We, the Dukes of this city and all in their right minds are not blind to your extraordinary achievements for this city, <CHARNAME>. But we must also think of the security and peace of Baldur's Gate - and that is now threatened by your presence. If you care even a little about this city, then prepare to leave voluntarily.~
+@47   = ~[Duke Belt]We are not just sending you away. We have a very important mission for you. The portal under Dragonspear Castle is still dormant. Blood with a divine touch could awaken it at any time - your blood, but also that of another Bhaalchild. We are literally sitting on a powder keg that continues to threaten the Sword Coast - and that many now know about, as well.~
+@48   = ~[Duke Belt]Find a way to close the portal forever, <CHARNAME>. That is the task we set for you. You are the hero of Baldur's Gate - live up to that name and free us from this danger. At the same time, prove that no one here need fear you and your Bhaal heritage.~
+@49   = ~[PC Reply]I will do that. Do you have any hints as to how to proceed?~
+@50   = ~[PC Reply]How do you imagine that?~
+@51   = ~[PC Reply]Oh, getting the blood of the master fiend from Avernus itself wasn't enough, was it?~
+@52   = ~[PC Reply]I don't see why it has to be me.~
+@53   = ~[PC Reply]I will go, if you insist on sending me away. But the portal is your problem.~
+@54   = ~[PC Reply]I won't take orders from you.~
+@55   = ~[Duke Belt]We cannot force you to help close the portal. But know that it is a prerequisite for you to be able to walk the streets here again without being harassed. If you do not help us to rid the danger the portal poses, then you will not be welcomed here - for the sake of peace in this city.~
+@56   = ~[Duke Belt]Your path will lead you first to Amn - the land with which you saved us from war. The mages who know best how to close portals are called Incantatrices, and you will find them there.~
+@57   = ~[Duke Belt]Take this letter. It is addressed to the ambassador of the Cowled Mages in Athkatla, the capital of Amn. This letter makes it clear that this is a request from the Dukes of Baldur's Gate and should be treated with the appropriate urgency.~
+@58   = ~[Duke Belt]We will inform the authorities in Athkatla of your appearance in parallel with your journey - not regarding your Bhaal heritage or what happened here, but as an emissary in search of a way to close the portal forever.~
+@59   = ~[Duke Belt]This brings us to another important topic. Skie's soul has disappeared, and this has led to the wildest conspiracies among people about your role in it, which have fueled the aforementioned rumors. Some believe that you sold the souls of the citizens of Baldur's Gate in Avernus for a pact with the fiends.~
+@60   = ~[PC Reply](sigh)~
+@61   = ~[PC Reply]What exactly happened with Skie's soul?~
+@62   = ~[PC Reply]I surely hope you are aware that I have nothing to do with this.~
+@63   = ~[PC Reply]Hmm, that's not a bad idea, actually. You said the portal can be repopened with my blood?~
+@64   = ~[Duke Belt]This is not a joking matter!~
+@65   = ~[Duke Belt]We know from Corporal Duncan that he found you unconscious at the crime scene, while the murder weapon was missing.~
+@66   = ~[PC Reply]So you do doubt my innocence on Skie's fate?~
+/* @67: Same as @14 from c#sodtweaks/translations/%s/sod_revisedend.tra */
+@67   = ~[PC Reply]This is horrible! I am so sorry.~
+/* @68: Same as @15 from c#sodtweaks/translations/%s/sod_revisedend.tra */
+@68   = ~[PC Reply]What will we do now?~
+/* @69: Same as @16 from c#sodtweaks/translations/%s/sod_revisedend.tra */
+@69   = ~[PC Reply]Why would I care?~
+@70   = ~[Duke Belt]Do not take this lightly, <CHARNAME>.~
+@71   = ~[Duke Belt]We do believe that you were a victim in this yourself - but that it was clearly you who was the real target of this attack, not Skie. Your guilt in this is not about what you did, but what you *are*.~
+@72   = ~[Duke Belt]What do you know about the whereabouts of the murder weapon, the Soultaker dagger?~
+@73   = ~[PC Reply]I do not remember there being a dagger.~
+@74   = ~[Duke Belt]Help us, <CHARNAME>, and there will be a chance the city comes to rest again. Do what we requested of you and we *will* be able to soothe any remaining riots that are occuring in your name on our city's street.~
+@75   = ~[Duke Belt]We will use the rest of the day to make preparations for your departure. You will neither have to leave without equipment nor without support.~
+@76   = ~[Duke Belt]Imoen, your childhood friend, is on the lookout for more travel compagnions as we speak.~
+@77   = ~[Duke Belt]Sort your equipment and rest once again. Tomorrow morning we will take you out of the city unnoticed.~
+@78   = ~[Captain Corwin]Duty calls me, <CHARNAME> - not all of us can just leave when tides get too high. I guess I will stay near until this is over.~
+@79   = ~[Jaheira]You came a long way. We promised Gorion to watch over you, and you outgrew any help we could give you to fight your foes. From now on, it will be we watching you so you will not succumb to your heritage.~
+@80   = ~[Khalid]G-Gorion would be proud of your achievements. We will come with you and help with the t-task the Dukes gave you.~
+@81   = ~[Khalid]G-Gorion would be proud of your achievements. I will come with you and help with the t-task the Dukes gave you.~
+@82   = ~[Dynaheir]A mighty Bhaalspawn you became. Your journey is not over, and so is not ours, either.~
+@83   = ~[Minsc]Boo is sad that little Skie is dead. There will be more evil to kick, and Boo said that this is something Minsc should look foreward to.~
+@84   = ~[Glint]Ah, this is goodbye I think, <CHARNAME>. I will head my own way and tell the great story of <CHARNAME> to all family along the Sword Coast!~
+@85   = ~[Rasaad]Duty calls me, <CHARNAME>. We will meet again, I am sure of it.~
+@86   = ~[Baeloth]Complications, complications - I'll be on my way then.~
+@87   = ~[Viconia]Travelling with you no longer grants the protection I need, <CHARNAME>. I will go on my own from here.~
+@88   = ~[Voghiln]Let us have a mug of ale together when you'll be in town, <CHARNAME>. Until then, this scald will go his own way again!~
+@89   = ~[MKhiin]<CHARNAME> has all the attention now. M'Khiin prefers to be in the shadows. Our paths will separate here.~
+@90   = ~[Edwin]We were victorious! (Well, that wasn't a suprise, considering I was part of it.) Now, I need to take care of my own things - before the name of Edwin the Red Wizard will be besmudged by those silly rumors those mindless apes are spreading.~
+@91   = ~[Safana]I'll be somewher else, <CHARNAME> - away from all the attention of assassins and murderers. See you around!~
+@92   = ~[Dorn]I have a call I need to follow, <CHARNAME>. Hiding and fleeing like a coward is not part of that. Farewell.~
+@93   = ~[Neera]Er... I'll go on my own, <CHARNAME>. I'll have my own quest to see through, and I don't want to end like Skie there - pretty dead, you know. You go revive Skie and fight off more assassins, or whatever it will be that you do. I'm sure you'll manage without me. See you.~
+@94   = ~[Duke Belt]Duke Silvershield is here as a father in turmoil, <CHARNAME>. Listen to what he has to say.~
+@95   = ~[Duke Silvershield]You! <CHARNAME>! You have to hunt the murderer... You are the only one who was there. Surely you will remember who did it. Go after the murderer and find my little Skie's soul! A father begs of you, <CHARNAME>. My little girl... my Skie...~
+@96   = ~[PC Reply]I can't promise anything.~
+@97   = ~[PC Reply]Schael, please come with me when I'll leave tomorrow.~
+/* #54614 changed */
+@98   = ~[Captain Corwin]You could have worse. Eltan and Belt moved mountains trying to calm the people and keeping you out of their reach.~
+/* #54615 changed */
+@99   = ~[PC Reply]I need your help, Schael. Come with me. Let us find Skie Silvershield's killer together. Please.~
+/* #54618 changed */
+@100  = ~[PC Reply]Let the people come. I'll send them to wherever Caelar is now.~
+@101  = ~[Captain Corwin]You threw the city in chaos. You threaten what I treasure the most - the safety and peace of the people in this city.~
+@102  = ~[PC Reply]In me? Why?~
+/* #54623 changed */
+@103  = ~[PC Reply]And yet here you are. Why? Not to come with me, I presume. You'd never defy your beloved Flaming Fist.~
+/* #70319 changed */
+@104  = ~[PC Reply]And so you are here seeking solace. I've none to give, and wouldn't offer it to you even if I did. Get out. You sicken me. Go!~
+@105  = ~[PC Reply]You mean without you, I guess. It doesn't have to be this way! I believe in us, Corwin.~
+@106  = ~[PC Reply]So it seems. Because you're obviously too scared to risk loving again.~
+@107  = ~[PC Reply]Wait, what? Why? What have I done?~
+/* #54641 changed */
+@108  = ~[Captain Corwin]Your glib tongue betrays you, <CHARNAME>. A city is in chaos, people are fighting over you in the streets, and all you offer is another quip. The city deserves better than that. As do I.~
+@109  = ~[PC Reply]I'll say it one more time. Come with me, Schael. Please.~
+/* #54656 changed */
+@110  = ~[PC Reply]You tell me. What you do for me here and now - or don't do for me - will let us both know how deep and true your feelings are.~
+/* #39439 changed */
+@111  = ~[Captain Corwin]The dark days must end. And they won't, not with you hiding and leaving, all in secret. If you care for Baldur's Gate, even a little... admit your responsibility for what is happening outside right now. Go out and accept the punishment given to you by the ones trying to hold the peace in this city. Show the teffified people that you are not an immortal, godly being.~
+@112  = ~[PC Reply]You are seriously expecting me to sacrifice my life - for bringing peace to Baldur's Gate?~
+@113  = ~[PC Reply]You even sure this would work the way you intended?...~
+/* #39443 changed */
+@114  = ~[Captain Corwin]It doesn't matter. The city is all that matters now. My father taught me that a hero - a real hero - is prepared to sacrifice <PRO_HIMHER>self for the greater good. They called you the hero of Baldur's Gate. Now you have the chance to earn the name.~
+/* @115 - @124: lovetalk with Dorn */
+/* #54328 changed */
+@115  = ~[PC Reply]I freed you once. It's time you returned the favor. I could use your help when leaving tomorrow.~
+@116  = ~[PC Reply]I could use your help when leaving tomorrow.~
+@117  = ~[PC Reply]What exactly are you referring to?~
+/* #54338 changed */
+@118  = ~[PC Reply]I've a confession. I didn't actually plan on anything that happens in the city currently.~
+@119  = ~[PC Reply]Yes, that's me. Bhaalspawn number one, bringing cities to fall.~
+@120  = ~[PC Reply]Are we talking about the riots in the city or the believe I took Skie's soul to sell it off to fiends?~
+@121  = ~[Dorn]The chaos! The destruction! There is riots and crimes all over the streets. I couldn't have served my lord any better than what you did, <CHARNAME>.~
+@122  = ~[Dorn]And the killing of the Duke's daughter on top of it.~
+@123  = ~[Dorn]Go, <CHARNAME>, bring chaos and death to other places like you did here. I will stay for you and harvest what you sowed, and I will do so in your name.~
+@124  = ~[PC Reply]Come with me when I'll leave, Dorn.~
+/* @125 - @132: lovetalk with Glint */
+@125  = ~[PC Reply]I need to leave soon. Come with me, Glint.~
+@126  = ~[PC Reply]I am being sent away from Baldur's Gate, but I don't want you to share this fate. This is goodbye.~
+/* #54857 changed */
+@127  = ~[Glint]I could say I love you, and I wouldn't be lying. But I would be lying if I said I loved you more than I do living a family life. There's a lot of people on the streets who're clearly looking for any excuse to cut down a dashing gnome in the prime of his life if he'll associate himself with you.~
+@128  = ~[PC Reply]Gods, Glint, is that what you are asking yourself? It's me - <CHARNAME>! You know me. I haven't changed!~
+@129  = ~[Glint]Of course I know that you didn't sell our souls to the fiends. And I also know that you do not strive to devour the city to become more powerful. I also do not believe that you killed Skie, although it was a shock, seeing you with her like that. But...~
+@130  = ~[Glint]You know I set out to check on my family and relatives. I'm a family man, really - and that's hard to do if one needs to hide and flee. I am sorry, <CHARNAME>.~
+@131  = ~[Glint]I know the Dukes want you to leave. Imoen already asked me to come with you, but... I won't, <CHARNAME>.~
+@132  = ~[Glint]You're making what I want to tell you much easier.~
+/* @133 - @140: lovetalk with Neera */
+/* #53206 changed */
+@133  = ~[Neera]Wow. Hiding behind an army of soldiers isn't a good look for you.~
+/* #53207 changed */
+@134  = ~[PC Reply]Neera! Come with me when I get out of here.~
+@135  = ~[PC Reply]I'm in here because the Dukes made it clear it's the best for the city right now.~
+/* #53210 changed */
+@136  = ~[Neera]You and Skie, <CHARNAME>. Explain it to me what happened there, please. I need to understand.~
+/* #53212 changed */
+@137  = ~[PC Reply]Someone murdered her. Not me. I don't know who, or how they did it.~
+/* #53213 changed */
+@138  = ~[PC Reply]You actually consider it was me? Go, then. I've no use for you.~
+@139  = ~[PC Reply]Come with me, Neera.~
+@140  = ~[Neera]Do you have an idea what is going on outside? On the streets? The Dukes aren't hiding you here for nothing, I can tell you. Being associated with you is currently... not the most healthy thing that can happen to someone, you know.~
+/* @141 - @146: lovetalk Rasaad */
+@141  = ~[PC Reply]I need to leave soon. Come with me.~
+@142  = ~[Rasaad]I understand it now. Even if you are victorious and do not fall for the darkness, it will still be your heritage that will spread chaos and destruction wherever you go.~
+/* #70287 changed */
+@143  = ~[PC Reply]Please, Rasaad. You can't believe I wanted what is happening outside.~
+/* #70294 changed */
+@144  = ~[Rasaad]I am glad to know I offer some comfort to you.~
+@145  = ~[PC Reply]Is that what we had comes down to? That you don't trust your feelings because you gave in to "whim or desire"? I thought what we had was real, Rasaad.~
+@146  = ~[PC Reply]If you honestly believe all I ever bring to people is death and chaos, then there was never anything real between us.~
+/* @147 - @150: lovetalk Safana */
+@147  = ~[PC Reply]Safana, come with me when I'll leave this place. It'll all settle down, believe me!~
+@148  = ~[PC Reply]Bars? More of a golden cage I would say.~
+@149  = ~[PC Reply]To be honest, so did I. And I expected it to be real bars - in your case.~
+@150  = ~[PC Reply]Are you mocking me?~
+/* @151 - @153: lovetalk Viconia */
+@151  = ~[PC Reply]Blood on my hands? You mean figuratively? You can't make me responsible for what is happening outside on the streets, or are you?~
+/* #53926 changed */
+@152  = ~[PC Reply]Did you come here to taunt me or are you going to come with me when I'll leave this city?~
+/* #53938 changed */
+@153  = ~[Viconia]But if I were caught at your side, I would be executed without a thought by the brutes who overrun this city. My life is perilous enough. I cannot tie it to the life of a wanted Bhaalspawn.~
+/* @154 - @162: lovetalk Voghiln */
+@154  = ~[PC Reply]Voghiln, I didn't want for this chaos to happen. You know that, right?~
+@155  = ~[PC Reply]Come with me when I'll leave the city, Voghiln.~
+/* #70309 changed */
+@156  = ~[Voghiln]You were the hero - the champion! You saved the Sword Coast from Sarevok, from Caelar, from the hordes of the Nine Hells! "How can anyone believe you guilty of selling souls?" I said, pleading your case to whoever listened.~
+/* #54146 changed */
+@157  = ~[Voghiln]Alas, I am only a skald. A mighty skald, to be sure, but all mine honeyed words cannot turn the ear of a mob calling you a monster.~
+/* #54153 changed */
+@158  = ~[PC Reply]Then... You've got to get out of here, Voghiln. Go, before you'll come to harm because of me.~
+@159  = ~[PC Reply]Come with me when I'll leave this place tomorrow, Voghiln.~
+/* #54155 changed */
+@160  = ~[PC Reply]I'm not surprised. Those town gossips must be having a time with this news.~
+@161  = ~[PC Reply]Well, then go, if you are scared.~
+/* #54156 changed */
+@162  = ~[Voghiln]I must leave. I cannot help anyone if I am believed to be a minion to Bhaal's evil bidding.~
+@163  = ~[PC Reply]I'm not in a cell, not even figuratively. On the contrary, I'm more exposed and known to people than I ever wanted.~
+/* @164 - @165: last visit Hooded Man */
+/* #66664 changed */
+@164  = ~[PC Reply]This isn't right. I didn't want things to escalate like this, I could never do such a thing on purpose. This makes no sense!~
+@165  = ~[PC Reply]How did you get in here? This was supposed to be a secure place! Get out of here before I'll let the guards take you down!~
+/* @166 - @184: last visit Duke Belt */
+@166  = ~[PC Reply]I'll be a damn sight better when I'm away from this city.~
+@167  = ~[PC Reply]I'll bring you both.~
+@168  = ~[Duke Belt]Not until you did as we requested, <CHARNAME> - as we pleaded with you, as representatives of this city, as loving father. We all wish you success from the bottom of our hearts - for Skie, for the peace in this city, but also for your own sake. I thank you for all you did for us - and all you are about to do in the future.~
+@169  = ~[Duke Belt]Your friend Imoen managed to find compagnions so you do not have to go on this journey alone. They are awaiting you.~
+@170  = ~[Duke Belt]Your heritage... what happened, it all poisoned the hearts of many people. It is no exaggeration to say that the city is being torn between those who would fight for you and those who want to see you put to death like Sarevok.~
+@171  = ~[Duke Belt]The night did not help to cool down the masses. On the contrary, word about your blood opening the portal to Avernus got around. Rumors now state that Sarevok tried to start a war between people, but you could start a war using fiends!~
+@172  = ~[Duke Belt]Take the note we gave you with you and make your way to find an Incantatrix who can close that portal, <CHARNAME>. I do not see another way to soothe the masses away from believing that you will come back, marching an army of fiends!~
+@173  = ~[Duke Belt]Entar - Duke Silvershield already begged you to retrieve the dagger and save his daughter. I am reluctant to say that you will not be safe here until this is settled, <CHARNAME> - until the dagger is found and Skie's soul is freed.~
+/* @174: Same as @34 from c#sodtweaks/translations/%s/sod_revisedend.tra */
+@174  = ~[PC Reply]Retrieving the dagger and freeing Skie is what honor dictates me to do. I will not rest until it is done.~
+@175  = ~[PC Reply]Retrieving the dagger and freeing Skie is what honor dictates me to do. I will not rest until it is done, as well as I will seek out the Cowled Wizards in Amn to close the portal.~
+@176  = ~[PC Reply]I will go to Amn and seek help with closing the portal, but I can't promise anything with regard to Skie yet - I have no idea where to start looking for the Hooded Man.~
+/* @177: Same as @35 from c#sodtweaks/translations/%s/sod_revisedend.tra */
+@177  = ~[PC Reply]Seems like this Hooded Man will not leave me in peace anyway, so I can as well go after him in persue of that dagger - and more.~
+@178  = ~[PC Reply]I didn't do anything wrong. I shouldn't have to leave the city in secret like a criminal.~
+/* @179: Same as @37 from c#sodtweaks/translations/%s/sod_revisedend.tra */
+@179  = ~[PC Reply]I couldn't care less. I found my way around the city while being outcast before.~
+/* @180: Same as @38 from c#sodtweaks/translations/%s/sod_revisedend.tra */
+@180  = ~[Duke Belt]This time you will not find means to enter again. We will see to that.~
+@181  = ~[Duke Belt]I... I cannot guarantee your safety, <CHARNAME>.~
+/* @182 is NOT the same as @40 in c#sodtweaks, but similar */
+@182  = ~[Duke Belt]Should Skie be saved, your name will be rehabilitated and you will be vindicated from any of those rediculous rumors about selling the people's souls to fiends... We can't dictate people's opinion on your Bhaal heritage, but we *can* work on reinstate your name and free passage in the city once Skie's soul will be with us again.~
+/* @183: Same as @41 from c#sodtweaks/translations/%s/sod_revisedend.tra */
+@183  = ~[Duke Belt]I am glad to hear that.~
+@184  = ~[Duke Belt]Your will to find her is all I need to hear.~
+/* @185 - @190: FF soldier brings PC to sewer exit */
+@185  = ~[FF Soldier (male)]I have orders to guide you to the exit where your friends are waiting. I can lead you the direct way without being exposed.~
+/* @186: Same as @44 from c#sodtweaks/translations/%s/sod_revisedend.tra */
+@186  = ~I don't care. I'll go on my own and see what I'll find on the way.~
+/* @187: Same as @45 from c#sodtweaks/translations/%s/sod_revisedend.tra */
+@187  = ~Good point. Lead the way then.~
+/* @188: Same as @46 from c#sodtweaks/translations/%s/sod_revisedend.tra */
+@188  = ~[FF Soldier (male)]Argh. Duke Belt will have my head for that - although only figuratively speaking. Well, I can't force you to come with me, so good luck down there.~
+/* @189: Same as @42 from c#sodtweaks/translations/%s/sod_revisedend.tra */
+@189  = ~[PC Reply]I think I can find my own way from here. Your escord is not needed.~
+@190  = ~[PC Reply]Lead the way.~
+/* @191 - @208: sewer confrontation with Captain Corwin and/or Corporal Bence Duncan */
+@191  = ~[Captain Corwin]Slowly, <CHARNAME>. Very slowly!~
+@192  = ~[PC Reply]What is this about, Corwin? The Dukes sent me out of the city, I'm just searching my own way out, that's all.~
+@193  = ~[PC Reply]Are you threatening me?~
+@194  = ~[PC Reply]Skie? Are you making me responsible for her death?~
+/* #39616 changed */
+@195  = ~[PC Reply]You would come at me like this? I thought we had something, you and I.~
+@196  = ~[PC Reply]And if I don't, what will you do? Cut me down? Are you aware you are acting against your superior's orders, Duke Eltan's - *all* Dukes of this city?~
+@197  = ~[PC Reply]Well, you'll have to - by Duke Eltan's orders. Don't they mean anything to you?~
+@198  = ~[PC Reply]So you decided to take justice into your own hands? Is that who you want to be? Is that how you serve your beloved city? By executing self-justice?~
+@199  = ~[PC Reply]What you are doing here is wrong, and you know it. Duke Silvershield trusts in me to find the murder of his daughter, Duke Eltan ordered the Flaming Fist to guide me out of the city unharmed. Where does this leave you?~
+@200  = ~[PC Reply]My conscience is clear, it is you who is trespassing. Come at me then, and face the consequences.~
+@201  = ~[PC Reply]I don't like where we are now, Corwin. Come to your senses! What do you think what you are doing here will bring for you - other than taking the mother away from your daughter, one way or the other?~
+@202  = ~[Captain Corwin]I'm letting <PRO_HIMHER> go. Stand down, Corporal.~
+@203  = ~[Captain Corwin]It's over, Corporal! We were... we were misguided. Stand down, that is an order!~
+@204  = ~[Corporal Bence Duncan]Duke Eltan wants you out of the city, and that's what we will do - just a little bit more final than he anticipated. I am sure noone will cry over the loss of you!~
+@205  = ~[PC Reply]You have lost your mind - both of you.~
+@206  = ~[PC Reply]Corwin, please. I understand that the Corporal has problems grasping reality, but this is not you.~
+@207  = ~[PC Reply]I was sent to seek out Skie's murderer - I'm the only one who saw him up close! Do you want to deprive a mourning father of his only hope?~
+@208  = ~[PC Reply]Why are you doing this?~
+/* @209 - @214: Imoen at sewer exit */
+@209  = ~[Imoen]I mean, I *know* the Dukes would guarantee your free passage and all, but - did you see what is going on in the streets of the city? Think of all the crowds of people who took refuge - now imagine one half going against the other. It's *madness*!~
+@210  = ~[Imoen]You know I went and looked for more compagnions the moment the Dukes mentioned they'd send you away.~
+@211  = ~[Imoen]And I was successful! We don't have to go alone, <CHARNAME>.~
+@212  = ~[Imoen]I didn't find anyone else, <CHARNAME>.~
+@213  = ~[Imoen]Except for who is with us already, of course.~
+@214  = ~[Imoen]I will come with you anyway. I hope that's clear, eh, sleepyhead?~
+@215  = ~[Jaheira]It might be good to clear our heads and think about how we'll go on about fulfilling what the Dukes asked of you, <CHARNAME>. With no means to track down the hooded man, it will be a long way ahead of us.~
+@216  = ~[Imoen]You just rest here, <CHARNAME>, okay? I'll go and have a look around who of our old friends might still be around. This is important things we have to do!~
+/* #69820 changed */
+@217  = ~Duke Belt—it is good to see you. I have news. I know who slew Skie now. It was the hooded man that was stalking me for my Bhaal heritage.~
+@218  = ~[Minsc]Evil hooded man killed little Skie! We will kick his evil butt, won't we, Boo?~
+@219  = ~[Jaheira]So this "Hooded Man" not only played with you but also didn't stop at killing off friends to do so. This should serve as a warning what we'll have to expect from him if we do not treat him as the treat that he is.~
+@220  = ~[Dynaheir]A skillful mage, interested in your Bhaal heritage, and not for friendly reasons. We will remain wary. The number of foes is numerous for a Bhaalchild.~
+@221  = ~[Khalid]Then we know what to d-do!~
+@222  = ~[Imoen]Wow! That freaky hooded man would have killed Skie?!~
+@223  = ~[Khalid]We will not stop until we f-found him!~
+@224  = ~[Jaheira]He certainly took a great interest in you, <CHARNAME>. Let's see whether it will be difficult to track him down - or whether he will make an appearance out of his own will. We should be prepared.~
+@225  = ~Ookay - I see your point.~
+@226  = ~[Jaheira]The Dukes sent us south, to Amn. This is where we should be headed.~
+@227  = ~[Jaheira]We do not know when and where the Hooded Man will seek you out again. We need to reach lands where your name is not tainted as the powerful Bhaal spawn you are, and where we can rest and gather our strength before the next confrontation.~
+@228  = ~[Khalid]We should p-proceed south for now. Your name will not stir as much trouble there, which will give us time to come up with a plan.~
+@229  = ~[Dynaheir]Metamages - or Incantrices, as they are called - are very powerful magic wielders. The Dukes did wise to send thee after one of them.~
+@230  = ~[Dynaheir]South is the obvious choice for now, as it seems.~
+@231  = ~[Minsc]Minsc is happy as long as there will be nuts for Boo! And evil butt to kick and free little Skie.~
+@232  = ~I guess south is a good way to go for now. And it's away from Baldur's Gate *and* Dragonspear Castle both!~
+@233  = ~[Imoen]We won't stop until we'll find him, <CHARNAME>! Will we?~
+@234  = ~[PC Reply]We need to discuss where we will be going from here, the sooner the better.~
+@235  = ~[PC Reply]The murderer of Skie - I know who it is, it was the hooded man that was stalking me for my Bhaal heritage.~
+/*
+@236  = ~
+@237  = ~
+@238  = ~
+@239  = ~
+@240  = ~
+*/

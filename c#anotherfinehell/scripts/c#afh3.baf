@@ -1,0 +1,269 @@
+/* visits */
+IF
+	GlobalLT("BD_Chapter_Save","GLOBAL",13)
+	Global("Chapter","GLOBAL",13)
+THEN
+	RESPONSE #100
+		SetGlobal("BD_Chapter_Save","GLOBAL",13)
+		SaveGame(25)
+END
+
+/* Global("C#AfH_jail_visitors","c#afh3",6) will be set: after romance interest visited */
+/* in case romance dialogue already happened, Global("C#AfHSoD_RIdone","GLOBAL",1) will be set */
+/* Corwin will always come. In case her romance dialogues already happened, she will say the non-romance dialogue */
+
+/* ##
+IF
+	Global("C#AfH_jail_visitors","c#afh3",9)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("C#AfH_jail_visitors","c#afh3",10) 
+		ActionOverride(Player1,SetSequence(SEQ_AWAKE))
+		SmallWait(4)
+		ActionOverride(Player1,Face(SW))
+		SmallWait(1)
+		ActionOverride(Player1,JumpToPoint([184.428]))
+		ActionOverride(Player1,SetSequence(SEQ_READY))
+		ActionOverride(Player1,FaceObject("bdireni"))  
+		SmallWait(6)
+		SetInterrupt(TRUE)
+//		ActionOverride("bdireni",StartDialogNoSet(Player1))
+END
+*/
+
+
+/* trigger rest */
+IF
+	Global("C#AfH_jail_visitors","c#afh3",8)
+THEN
+	RESPONSE #100
+		FadeToColor([30.0],0)
+		ClearAllActions()
+		MultiPlayerSync()
+		StartCutSceneMode()
+/*
+		SetGlobal("C#AfH_jail_visitors","c#afh3",9) 
+		SmallWait(20)
+		MultiPlayerSync()
+		ActionOverride(Player1,Rest())
+		ActionOverride(Player2,Rest())
+		ActionOverride(Player3,Rest())
+		ActionOverride(Player4,Rest())
+		ActionOverride(Player5,Rest())
+		ActionOverride(Player6,Rest())
+		DayNight(MIDNIGHT)
+		ActionOverride(Player1,JumpToPoint([215.396]))
+		ActionOverride(Player1,Face(SE))
+		ActionOverride(Player1,SetSequence(SEQ_SLEEP))
+		ActionOverride(Player2,JumpToPoint([449.668]))
+		ActionOverride(Player2,Face(NE))
+		ActionOverride(Player2,SetSequence(SEQ_SLEEP))
+		ActionOverride(Player3,JumpToPoint([495.702]))
+		ActionOverride(Player3,Face(NE))
+		ActionOverride(Player3,SetSequence(SEQ_SLEEP))
+		ActionOverride(Player4,JumpToPoint([554.743]))
+		ActionOverride(Player4,Face(NE))
+		ActionOverride(Player4,SetSequence(SEQ_SLEEP))
+		ActionOverride(Player5,JumpToPoint([621.732]))
+		ActionOverride(Player5,Face(N))
+		ActionOverride(Player5,SetSequence(SEQ_SLEEP))
+		ActionOverride(Player6,JumpToPoint([671.702]))
+		ActionOverride(Player6,Face(N))
+		ActionOverride(Player6,SetSequence(SEQ_SLEEP))
+		Wait(2)
+		MoveViewObject(Player1,INSTANT)
+		Wait(1)
+*/
+		StartCutSceneEx("c#afh64",TRUE) 
+END
+
+IF
+	Global("Chapter","GLOBAL",13)
+	!GlobalTimerNotExpired("C#AfH_jail_visitors_timer","c#afh3")   
+	OR(3) 
+		Global("C#AfH_jail_visitors","c#afh3",0)  
+		Global("C#AfH_jail_visitors","c#afh3",3)  
+		Global("C#AfH_jail_visitors","c#afh3",12)
+	InMyArea(Player1)
+THEN
+	RESPONSE #100
+		IncrementGlobal("C#AfH_jail_visitors","c#afh3",1)  
+		SetGlobalTimer("C#AfH_jail_visitors_timer","c#afh3",ONE_ROUND)  
+END
+
+/* skip visits if no match was found */
+IF
+	GlobalTimerExpired("C#AfH_jail_visitors2_timer","c#afh3")  
+	OR(2)
+		Global("C#AfH_jail_visitors","c#afh3",2)  
+		Global("C#AfH_jail_visitors","c#afh3",5)  
+THEN
+	RESPONSE #100
+		IncrementGlobal("C#AfH_jail_visitors","c#afh3",1)  
+END
+
+IF
+	GlobalTimerExpired("C#AfH_jail_visitors_timer","c#afh3")  
+	Global("C#AfH_jail_visitors","c#afh3",1)  
+	Dead("CORWIN")  // Corwin
+THEN
+	RESPONSE #100
+		SetGlobal("C#AfH_jail_visitors","c#afh3",3)  
+END
+
+IF
+	GlobalTimerExpired("C#AfH_jail_visitors_timer","c#afh3")  
+	Global("C#AfH_jail_visitors","c#afh3",1)  
+	!Dead("CORWIN")  // Corwin
+THEN
+	RESPONSE #100
+		SetGlobal("C#AfH_jail_visitors","c#afh3",2)  
+		SetGlobalTimer("C#AfH_jail_visitors2_timer","c#afh3",TEN_ROUNDS)  
+		CreateCreature("bdschae2",[596.220],NW)  // Corwin
+		ActionOverride("bdschae2",ChangeAIScript("c#afhvis",OVERRIDE))
+END
+
+/* romance visits - only if dialogues didn't trigger yet */
+IF
+	Global("C#AfHSoD_RIdone","GLOBAL",0)
+	GlobalTimerExpired("C#AfH_jail_visitors_timer","c#afh3")  
+	Global("C#AfH_jail_visitors","c#afh3",4)  
+	Global("bd_neera_romanceactive","global",2)
+	!Dead("NEERA")  // Neera
+THEN
+	RESPONSE #100
+		SetGlobal("C#AfH_jail_visitors","c#afh3",5)  
+		SetGlobalTimer("C#AfH_jail_visitors2_timer","c#afh3",TEN_ROUNDS)  
+		MoveGlobal("c#afh3","NEERA",[596.220])  // Neera
+		ActionOverride("NEERA",ChangeAIScript("c#afhvis",OVERRIDE))
+END
+
+IF
+	Global("C#AfHSoD_RIdone","GLOBAL",0)
+	GlobalTimerExpired("C#AfH_jail_visitors_timer","c#afh3")  
+	Global("C#AfH_jail_visitors","c#afh3",4)  
+	Global("bd_safana_romanceactive","global",2)
+	!Dead("SAFANA")  // Safana
+	OR(2)
+		Global("bd_SafanaRomance22","GLOBAL",0)
+		!Dead("voghiln")  // Voghiln
+THEN
+	RESPONSE #100
+		SetGlobal("C#AfH_jail_visitors","c#afh3",5)  
+		SetGlobalTimer("C#AfH_jail_visitors2_timer","c#afh3",TEN_ROUNDS)  
+		MoveGlobal("c#afh3","SAFANA",[596.220])  // Safana
+		ActionOverride("SAFANA",ChangeAIScript("c#afhvis",OVERRIDE))
+END
+
+IF
+	Global("C#AfHSoD_RIdone","GLOBAL",0)
+	GlobalTimerExpired("C#AfH_jail_visitors_timer","c#afh3")  
+	Global("C#AfH_jail_visitors","c#afh3",4)  
+	Global("bd_viconia_romanceactive","global",2)
+	!Dead("VICONIA")  // Viconia
+THEN
+	RESPONSE #100
+		SetGlobal("C#AfH_jail_visitors","c#afh3",5)  
+		SetGlobalTimer("C#AfH_jail_visitors2_timer","c#afh3",TEN_ROUNDS)  
+		MoveGlobal("c#afh3","VICONIA",[596.220])  // Viconia
+		ActionOverride("VICONIA",ChangeAIScript("c#afhvis",OVERRIDE))
+END
+
+IF
+	Global("C#AfHSoD_RIdone","GLOBAL",0)
+	GlobalTimerExpired("C#AfH_jail_visitors_timer","c#afh3")  
+	Global("C#AfH_jail_visitors","c#afh3",4)  
+	Global("bd_rasaad_romanceactive","global",2)
+	!Dead("RASAAD")  // Rasaad
+THEN
+	RESPONSE #100
+		SetGlobal("C#AfH_jail_visitors","c#afh3",5)  
+		SetGlobalTimer("C#AfH_jail_visitors2_timer","c#afh3",TEN_ROUNDS)  
+		MoveGlobal("c#afh3","RASAAD",[596.220])  // Rasaad
+		ActionOverride("RASAAD",ChangeAIScript("c#afhvis",OVERRIDE))
+END
+
+IF
+	Global("C#AfHSoD_RIdone","GLOBAL",0)
+	GlobalTimerExpired("C#AfH_jail_visitors_timer","c#afh3")  
+	Global("C#AfH_jail_visitors","c#afh3",4)  
+	Global("bd_voghiln_romanceactive","global",2)
+	!Dead("VOGHILN")  // Voghiln
+THEN
+	RESPONSE #100
+		SetGlobal("C#AfH_jail_visitors","c#afh3",5)  
+		SetGlobalTimer("C#AfH_jail_visitors2_timer","c#afh3",TEN_ROUNDS)  
+		MoveGlobal("c#afh3","VOGHILN",[596.220])  // Voghiln
+		ActionOverride("VOGHILN",ChangeAIScript("c#afhvis",OVERRIDE))
+END
+
+IF
+	Global("chapter","global",13)
+	Global("C#AfHSoD_RIdone","GLOBAL",0)
+	GlobalTimerExpired("C#AfH_jail_visitors_timer","c#afh3")  
+	Global("C#AfH_jail_visitors","c#afh3",4)  
+	Global("bd_dorn_romanceactive","global",2)
+	!Dead("DORN")  // Dorn
+THEN
+	RESPONSE #100
+		SetGlobal("C#AfH_jail_visitors","c#afh3",5)  
+		SetGlobalTimer("C#AfH_jail_visitors2_timer","c#afh3",TEN_ROUNDS)  
+		MoveGlobal("c#afh3","DORN",[596.220])  // Dorn
+		ActionOverride("DORN",ChangeAIScript("c#afhvis",OVERRIDE))
+END
+
+IF
+	Global("chapter","global",13)
+	Global("C#AfHSoD_RIdone","GLOBAL",0)
+	GlobalTimerExpired("C#AfH_jail_visitors_timer","c#afh3")  
+	Global("C#AfH_jail_visitors","c#afh3",4)  
+	Global("bd_glint_romanceactive","global",2)
+	!Dead("GLINT")  // Glint
+THEN
+	RESPONSE #100
+		SetGlobal("C#AfH_jail_visitors","c#afh3",5)  
+		SetGlobalTimer("C#AfH_jail_visitors2_timer","c#afh3",TEN_ROUNDS)  
+		MoveGlobal("c#afh3","GLINT",[596.220])  // Glint
+		ActionOverride("GLINT",ChangeAIScript("c#afhvis",OVERRIDE))
+END
+
+/* no romance visits - increase variable */
+IF
+	Global("chapter","global",13)
+	Global("C#AfH_jail_visitors","c#afh3",4) 
+THEN
+	RESPONSE #100
+		SetGlobal("C#AfH_jail_visitors","c#afh3",6)  
+END
+
+IF
+	Global("chapter","global",13)
+	Global("C#AfH_jail_visitors","c#afh3",13)  
+THEN
+	RESPONSE #100
+		SetGlobal("C#AfH_jail_visitors","c#afh3",14)
+		ActionOverride(Player2,SetSequence(SEQ_AWAKE))
+		ActionOverride(Player3,SetSequence(SEQ_AWAKE))
+		ActionOverride(Player4,SetSequence(SEQ_AWAKE))
+		ActionOverride(Player5,SetSequence(SEQ_AWAKE))
+		ActionOverride(Player6,SetSequence(SEQ_AWAKE))
+		CreateCreature("c#afhblt",[596.220],NW) 
+		ActionOverride("c#afhblt",ChangeAIScript("c#afhvi1",OVERRIDE))
+		CreateCreature("bdff1709",[555.180],NW)  
+		ActionOverride("bdff1709",MakeGlobal())
+END
+
+/* soldier leads the PC through the sewers */
+
+IF
+	Global("C#AfH_NotYet","c#afh3",0)
+	Global("bd_plot","global",632)
+	!Dead("BDFF1709")
+THEN
+	RESPONSE #100
+		SetGlobal("bd_plot","global",639)
+		StartCutSceneMode()
+		StartCutScene("c#afh6b")
+END
+
