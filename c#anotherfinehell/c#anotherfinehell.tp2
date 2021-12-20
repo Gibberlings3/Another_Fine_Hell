@@ -2,7 +2,7 @@ BACKUP ~c#anotherfinehell/backup~
 AUTHOR ~https://baldurs-gate.de/index.php?threads/another-fine-hell-mod-f%C3%BCr-sod.45305/~ 
 
 
-VERSION ~Alpha_211102~
+VERSION ~Alpha_211220~
 
 README ~c#anotherfinehell/readme.anotherfinehell.%LANGUAGE%.txt~ ~c#anotherfinehell/readme.anotherfinehell.english.txt~
 
@@ -89,6 +89,12 @@ LANGUAGE ~English~
          ~c#anotherfinehell/translations/english/setup.tra~
 	 ~c#anotherfinehell/translations/english/game.tra~
 	 ~c#anotherfinehell/translations/english/journal.tra~
+
+LANGUAGE ~French~
+         ~french~   
+         ~c#anotherfinehell/translations/french/setup.tra~
+	 ~c#anotherfinehell/translations/french/game.tra~
+	 ~c#anotherfinehell/translations/french/journal.tra~
 
 BEGIN @100000 /* ~Another Fine Hell - Optional Ending for SoD and BGII Closure~ */ DESIGNATED 0
 LABEL C#AnotherFineHell-Main

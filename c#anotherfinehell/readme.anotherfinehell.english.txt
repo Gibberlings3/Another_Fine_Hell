@@ -152,6 +152,7 @@ END //Another Fine Hell
 
 CREDITS
 
+JohnBob: French translation (vAlpha_211220)
 Lauriel: ideas 
 
 
@@ -180,7 +181,8 @@ SoD Walkthrough at GameBanshee http://www.gamebanshee.com/baldursgate/walkthroug
 
 HISTORY
 
-Version 
+Version Alpha_211220
+-French version added, by JohnBob
 
 Version Alpha_211102
 -first public release
