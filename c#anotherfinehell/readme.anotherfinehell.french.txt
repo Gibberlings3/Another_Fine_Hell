@@ -181,6 +181,7 @@ HISTORY
 
 Version Alpha_220117
 -corrected patching of some scripts (should patch bcs, not baf)
+Crossmod with Imoen4Ever: Imoen will remain in group, too, after Slayer dream scene
 
 Version Alpha_211220
 -French version added, by JohnBob

@@ -1611,7 +1611,7 @@ COPY_TRANS bdimoen 101
 END
 
 IF ~~ THEN where_to_01
-SAY ~[Imoen]Are we ready to go then?~
+SAY @236 /* ~[Imoen]Are we ready to go then?~ */
 + ~Global("C#AfHSoD_bdimoen101_HM","MYAREA",0)~ + @235 /* ~[PC Reply]The murderer of Skie - I know who it is, it was the hooded man that was stalking me for my Bhaal heritage.~ */ DO ~SetGlobal("C#AfHSoD_bdimoen101_HM","MYAREA",1)~ + skiemurderer
 COPY_TRANS bdimoen 101
 END

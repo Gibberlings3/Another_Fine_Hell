@@ -2,7 +2,7 @@ BACKUP ~c#anotherfinehell/backup~
 AUTHOR ~https://baldurs-gate.de/index.php?threads/another-fine-hell-mod-f%C3%BCr-sod.45305/~ 
 
 
-VERSION ~Alpha_211220~
+VERSION ~Alpha_220117~
 
 README ~c#anotherfinehell/readme.anotherfinehell.%LANGUAGE%.txt~ ~c#anotherfinehell/readme.anotherfinehell.english.txt~
 
@@ -98,7 +98,7 @@ LANGUAGE ~French~
 
 BEGIN @100000 /* ~Another Fine Hell - Optional Ending for SoD and BGII Closure~ */ DESIGNATED 0
 LABEL C#AnotherFineHell-Main
-	REQUIRE_PREDICATE (GAME_INCLUDES ~sod~) @100001 /* ~This component is only compatible with SoD and EET.~ */
+REQUIRE_PREDICATE (GAME_INCLUDES ~sod~) @100001 /* ~This component is only compatible with SoD and EET.~ */
 	FORBID_COMPONENT ~c#sodtweaks.tp2~ ~12~ @100002 /* ~Other optional ending for SoD is already installed.~ */
 	FORBID_COMPONENT ~c#sodtweaks.tp2~ ~13~ @100002 /* ~Other optional ending for SoD is already installed.~ */
 	FORBID_COMPONENT ~c#sodtweaks.tp2~ ~14~ @100002 /* ~Other optional ending for SoD is already installed.~ */
@@ -265,6 +265,17 @@ COPY_EXISTING ~bdcut61.bcs~ ~override~
 		END
 	END
 BUT_ONLY_IF_IT_CHANGES
+
+/* Crossmod with Imoen4Ever: Imoen will remain in group, too */
+ACTION_IF MOD_IS_INSTALLED ~imoen_forever.tp2~ ~11~ THEN BEGIN
+  PRINT @100009 /* ~Imoen 4 Ever: "Imoen returns to PC in first camp" detected.~ */ 
+  COPY_EXISTING ~bdcut61.bcs~ ~override~
+     DECOMPILE_AND_PATCH BEGIN
+        REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~(\InParty("%IMOEN_DV%")\)~ ~\1
+Global("C#FtGSoD_RevisedEnd","GLOBAL",0)~
+     END
+  BUT_ONLY_IF_IT_CHANGES 
+END //Imoen4Ever
 
 COPY_EXISTING ~bdcut61a.bcs~ ~override~
   DECOMPILE_AND_PATCH BEGIN

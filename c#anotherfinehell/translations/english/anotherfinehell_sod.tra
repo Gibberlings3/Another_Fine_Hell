@@ -248,9 +248,9 @@
 @184  = ~[Duke Belt]Your will to find her is all I need to hear.~
 /* @185 - @190: FF soldier brings PC to sewer exit */
 @185  = ~[FF Soldier (male)]I have orders to guide you to the exit where your friends are waiting. I can lead you the direct way without being exposed.~
-/* @186: Same as @44 from c#sodtweaks/translations/%s/sod_revisedend.tra */
+/* @186: Same as @44 from c#sodtweaks/translations/%s/sod_revisedend.tra [PC Reply] */
 @186  = ~I don't care. I'll go on my own and see what I'll find on the way.~
-/* @187: Same as @45 from c#sodtweaks/translations/%s/sod_revisedend.tra */
+/* @187: Same as @45 from c#sodtweaks/translations/%s/sod_revisedend.tra  [PC Reply] */
 @187  = ~Good point. Lead the way then.~
 /* @188: Same as @46 from c#sodtweaks/translations/%s/sod_revisedend.tra */
 @188  = ~[FF Soldier (male)]Argh. Duke Belt will have my head for that - although only figuratively speaking. Well, I can't force you to come with me, so good luck down there.~
@@ -295,19 +295,20 @@
 @222  = ~[Imoen]Wow! That freaky hooded man would have killed Skie?!~
 @223  = ~[Khalid]We will not stop until we f-found him!~
 @224  = ~[Jaheira]He certainly took a great interest in you, <CHARNAME>. Let's see whether it will be difficult to track him down - or whether he will make an appearance out of his own will. We should be prepared.~
-@225  = ~Ookay - I see your point.~
+@225  = ~[Imoen]Ookay - I see your point.~
 @226  = ~[Jaheira]The Dukes sent us south, to Amn. This is where we should be headed.~
 @227  = ~[Jaheira]We do not know when and where the Hooded Man will seek you out again. We need to reach lands where your name is not tainted as the powerful Bhaal spawn you are, and where we can rest and gather our strength before the next confrontation.~
 @228  = ~[Khalid]We should p-proceed south for now. Your name will not stir as much trouble there, which will give us time to come up with a plan.~
 @229  = ~[Dynaheir]Metamages - or Incantrices, as they are called - are very powerful magic wielders. The Dukes did wise to send thee after one of them.~
 @230  = ~[Dynaheir]South is the obvious choice for now, as it seems.~
 @231  = ~[Minsc]Minsc is happy as long as there will be nuts for Boo! And evil butt to kick and free little Skie.~
-@232  = ~I guess south is a good way to go for now. And it's away from Baldur's Gate *and* Dragonspear Castle both!~
+@232  = ~[Imoen]I guess south is a good way to go for now. And it's away from Baldur's Gate *and* Dragonspear Castle both!~
 @233  = ~[Imoen]We won't stop until we'll find him, <CHARNAME>! Will we?~
 @234  = ~[PC Reply]We need to discuss where we will be going from here, the sooner the better.~
 @235  = ~[PC Reply]The murderer of Skie - I know who it is, it was the hooded man that was stalking me for my Bhaal heritage.~
+
+@236  = ~[Imoen]Are we ready to go then?~
 /*
-@236  = ~
 @237  = ~
 @238  = ~
 @239  = ~
