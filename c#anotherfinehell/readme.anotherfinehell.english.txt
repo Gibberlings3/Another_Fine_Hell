@@ -181,6 +181,9 @@ SoD Walkthrough at GameBanshee http://www.gamebanshee.com/baldursgate/walkthroug
 
 HISTORY
 
+Version Alpha_220117
+-corrected patching of some scripts (should patch bcs, not baf)
+
 Version Alpha_211220
 -French version added, by JohnBob
 

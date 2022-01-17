@@ -130,7 +130,7 @@ EXTEND_BOTTOM ~bdchains.bcs~   ~c#anotherfinehell/scripts/add_bdchains.baf~
 EVALUATE_BUFFER
 EXTEND_TOP ~bdstone.bcs~   ~c#anotherfinehell/scripts/add_bdstone.baf~
 EVALUATE_BUFFER
-EXTEND_BOTTOM ~bdireni.baf~   ~c#anotherfinehell/scripts/bdireni_visit.baf~
+EXTEND_BOTTOM ~bdireni.bcs~   ~c#anotherfinehell/scripts/bdireni_visit.baf~
 EVALUATE_BUFFER
 EXTEND_BOTTOM ~bdfist61.bcs~   ~c#anotherfinehell/scripts/add_bdfist63.baf~
 EXTEND_BOTTOM ~bdfist63.bcs~   ~c#anotherfinehell/scripts/add_bdfist63.baf~
@@ -140,7 +140,7 @@ COMPILE ~c#anotherfinehell/scripts/c#afh62.baf~ EVALUATE_BUFFER
 COMPILE ~c#anotherfinehell/scripts/c#afh64.baf~ EVALUATE_BUFFER
 COMPILE ~c#anotherfinehell/scripts/c#afh6b.baf~ EVALUATE_BUFFER
 COMPILE ~c#anotherfinehell/scripts/c#afhvis.baf~ EVALUATE_BUFFER
-EXTEND_TOP ~c#afhvis.baf~   ~c#anotherfinehell/scripts/bdireni_visit.baf~
+EXTEND_TOP ~c#afhvis.bcs~   ~c#anotherfinehell/scripts/bdireni_visit.baf~
 EVALUATE_BUFFER
 
 MOVE ~c#anotherfinehell/scripts/c#afhvis.baf~ ~c#anotherfinehell/scripts/c#afhvi1.baf~
