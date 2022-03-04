@@ -1,10 +1,11 @@
 /* c#anotherfinehell.tp2 */
-@0  = ~Le Conseil des Quatre n'est pas être prêt à vous épauler, mais vous pouvez compter sur moi. Maintenant, mettons un peu de distance entre vous et la Porte de Baldur, d'accord ?~
-@1  = ~Cela ne semblait peut être pas évident depuis votre chambre au palais, mais vous avez plus d'amis que vous le penser.~
-@2  = ~Je suis sûr que nous sommes assez loin de la Porte de Baldur maintenant. Pouvons-nous faire une pause, juste un instant ? ~
+@0  = ~[Imoen]Le Conseil des Quatre n'est peut-être pas prêt à t'épauler, mais tu peux compter sur moi. Maintenant, mettons un peu de distance entre nous et la Porte de Baldur, d'accord ?~
+@1  = ~[Imoen]Cela ne te semblait peut-être pas évident depuis ta chambre au palais, mais tu as plus d'amis que tu ne le penses.~
+@2  = ~[Imoen]Je suis sûre que nous sommes assez loin de la Porte de Baldur maintenant. Pouvons-nous faire une pause, juste un instant ?~
 @3  = ~Requête à l'attention de l'ambassadeur des Mages Cagoulés~
 @4  = ~Ceci est une requête des Ducs de la Porte de Baldur adressée à l'ambassadeur des Mages Cagoulés, pour vous aider à découvrir le moyen de refermer une bonne fois pour toutes le portail vers Avernus situé sous le Château Paldragon.
-Vous êtes censé vous rendre à Athkatla en Amn et montrer ceci à un représentant des Mages Cagoulés afin de demander l'aide d'une incantatrice.~
+Vous êtes censé vous rendre à Athkatla, en Amn et montrer ceci à un représentant des Mages Cagoulés afin de demander l'aide d'une incantatrice.~ ~Ceci est une requête des Ducs de la Porte de Baldur adressée à l'ambassadeur des Mages Cagoulés, pour vous aider à découvrir le moyen de refermer une bonne fois pour toutes le portail vers Avernus situé sous le Château Paldragon.
+Vous êtes censée vous rendre à Athkatla, en Amn, et montrer ceci à un représentant des Mages Cagoulés afin de demander l'aide d'une incantatrice.~
 /*
 @5  = 
 @6  = 
@@ -16,20 +17,20 @@ Vous êtes censé vous rendre à Athkatla en Amn et montrer ceci à un représentant 
 /* add_bdchains.baf */
 @100 = ~Vous nous avez sauvés !~
 @101 = ~Qu'avez-vous fait dans les entrailles du Château Paldragon ?~
-@102 = ~Vous avez sauvé le Fort Tamal de la croisade. Vous nous avez tous sauvés de Caelar !~
+@102 = ~Vous avez sauvé le Fort-du-Pont de la croisade. Vous nous avez tous sauvés de Caelar !~
 @103 = ~Et voilà notre héros !~ ~Et voilà notre héroïne !~
-@104 = ~Soyez notre héros ! Nous n'avons pas besoin d'un nouveau Sarevok !~ ~Soyez notre héroïne ! Nous n'avons pas besoin d'une nouvelle Sarevok !~
+@104 = ~Soyez notre héros ! Nous n'avons pas besoin d'un nouveau Sarevok !~ ~Soyez notre héroïne ! Nous n'avons pas besoin d'un nouveau Sarevok !~
 @105 = ~Vous nous avez tous sauvés !~
 @106 = ~Hourra pour la victoire du Poing Enflammé !~
 @107 = ~Un portail vers Avernus ! Les dieux puissent avoir pitié de nos âmes !~
-@108 = ~Caelar est perdu ! Personne ne devrait la pleurer !~
+@108 = ~Caelar est perdue ! Personne ne devrait la pleurer !~
 @109 = ~Hourra pour notre héros !~ ~Hourra pour notre héroïne !~
 @110 = ~<CHARNAME> a fait un pacte avec les démons !~
 @111 = ~Fils de Bhaal ! Nous ne vous faisons pas confiance !~ ~Fille de Bhaal ! Nous ne vous faisons pas confiance !~
-@112 = ~Êtes-vous comme Sarevok ? Nous saurons voir votre véritable nature, rejeton de Bhaal !~ ~Êtes-vous comme Sarevok ? Nous saurons voir votre véritable nature, enfant de Bhaal !~
+@112 = ~Êtes-vous comme Sarevok ? Nous saurions voir votre véritable nature, rejeton de Bhaal !~ ~Êtes-vous comme Sarevok ? Nous saurions voir votre véritable nature, enfant de Bhaal !~
 
 /* c#afh3a.baf */
-@120 = ~Continuez votre chemin tout seul, et vite avant que d'autres soldats ne découvrent les corps de leurs camarades.~ ~Continuez votre chemin toute seule, et vite avant que d'autres soldats ne découvrent les corps de leurs camarades.~
+@120 = ~Continuez votre chemin tout seul, et vite ! Avant que d'autres soldats ne découvrent les corps de leurs camarades.~ ~Continuez votre chemin toute seule, et vite ! Avant que d'autres soldats ne découvrent les corps de leurs camarades.~
 @121 = ~L'étage inférieur regorge de soldats, présents pour vous protéger - et probablement aussi pour vous garder à l'œil.~
 @122 = ~Il n'y a rien de plus à faire en bas - mieux vaut vous préparer et vous reposer avant votre départ.~
 

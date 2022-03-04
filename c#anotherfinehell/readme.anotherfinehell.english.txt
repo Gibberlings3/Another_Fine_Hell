@@ -154,6 +154,7 @@ CREDITS
 
 JohnBob: French translation (vAlpha_211220)
 Lauriel: ideas 
+Machiavélique: proofreading (French) (vAlpha_220123)
 
 
 
@@ -180,6 +181,9 @@ SoD Walkthrough at GameBanshee http://www.gamebanshee.com/baldursgate/walkthroug
 
 
 HISTORY
+
+Version Alpha_220123
+-French translation proof read by Machiavélique
 
 Version Alpha_220117
 -corrected patching of some scripts (should patch bcs, not baf)
