@@ -324,7 +324,7 @@ CHAIN
 IF ~~ THEN c#afhblt byefornow_02
 @75 /* Wir werden den heutigen Tag nutzen, um Vorbereitungen für Eure Abreise zu treffen. Ihr werdet nicht ohne Ausrüstung und auch nicht ohne Unterstützung gehen müssen. */
 == c#afhblt IF ~!InMyArea("%IMOEN_DV%") !Dead("%IMOEN_DV%")~ THEN @76 /* Imoen, Eure Freundin aus Kindheitstagen, ist bereits jetzt unterwegs, um weitere Reisegefährten zu finden. */
-= @77 /* Sortiert Eure Ausrüstung und ruht Euch noch einmal aus. Morgen früh werden wir Euch unbemerkt aus der Stadt bringen. */ DO ~SetGlobal("C#AfHSoD_RevisedEnd","GLOBAL",8)~
+== c#afhblt @77 /* Sortiert Eure Ausrüstung und ruht Euch noch einmal aus. Morgen früh werden wir Euch unbemerkt aus der Stadt bringen. */ DO ~SetGlobal("C#AfHSoD_RevisedEnd","GLOBAL",8)~
 
 /* non default NPCs say good-bye */
 == bdcorwij IF ~!Global("bd_corwin_romanceactive","global",2) InMyArea("Corwin") InParty("Corwin") !StateCheck("Corwin",CD_STATE_NOTVALID)~ THEN @78 /* [Captain Corwin]Duty calls me, <CHARNAME> - not all of us can just leave when tides get too high. I guess I will stay near until this is over. */

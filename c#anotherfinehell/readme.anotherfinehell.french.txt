@@ -179,6 +179,10 @@ SoD Walkthrough at GameBanshee http://www.gamebanshee.com/baldursgate/walkthroug
 
 
 HISTORY
+Version Alpha_220923
+-NPCs should leave and cutscene should play correctly (variable should be set if Imoen is in group, too).
+-Items dropped by NPCs upon leaving should be accessible in third floor of palace.
+
 
 Version Alpha_220123
 -French translation proof read by Machiavélique
