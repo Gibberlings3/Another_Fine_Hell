@@ -308,9 +308,5 @@
 @235  = ~[PC Reply]Le meurtrier de Skie... Je connais son identité maintenant. C'est l'Homme à la Capuche, celui qui semblait très intéressé par mon héritage divin.~
 @236  = ~[Imoen]Alors, on est prêts à partir ?~ ~Alors, on est prêtes à partir ?~
 
-/*
-@237  = ~
-@238  = ~
-@239  = ~
-@240  = ~
-*/
+/* new for vAlpha_230408 */
+@237  = ~Skie was killed because of you, <CHARNAME>! She was a pawn in some scheme unfolding around you because of your heritage. They *will* come for you again, and you will let us know if that happens. It's... it's all we got...~

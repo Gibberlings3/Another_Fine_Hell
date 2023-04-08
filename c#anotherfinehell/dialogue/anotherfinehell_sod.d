@@ -18,6 +18,7 @@ IF WEIGHT #-1
 SAY #%eet_2%39373 /* ~What have you done, <CHARNAME>? WHAT HAVE YOU DONE?~ [BD39373] */
 = @0 /* You... you were responsible for Skie's safety! And now she is laying here, dead and soaked in her own blood?! She is dead! The daughter of Duke Silvershield was killed! */
   IF ~~ THEN DO ~SetGlobal("C#AfHSoD_RevisedEnd","GLOBAL",1)
+SetGlobal("C#FtGSoD_RevisedEnd","GLOBAL",1) //needed for legacy reasons for crossmod
 StartCutSceneMode()
 StartCutSceneEx("bdcut60b",TRUE)~ EXIT
 END
@@ -102,7 +103,7 @@ IF ~~ THEN BDBENCE totalrevised_bence_07
 = #%eet_2%44332 /* ~Come along, <CHARNAME>.~ [BD44332] */
 END
 IF ~~ THEN DO ~StartCutSceneMode()
-SetGlobal("bd_plot","global",592) SetGlobal("C#AfHSoD_RevisedEnd","GLOBAL",1)
+SetGlobal("bd_plot","global",592) SetGlobal("C#AfHSoD_RevisedEnd","GLOBAL",2)
 StartCutScene("c#afh61")~ EXIT
 
 
@@ -124,9 +125,9 @@ ADD_STATE_TRIGGER bdbelt 1 ~False()~
 
 CHAIN
 IF WEIGHT #-1
-~AreaCheck("bd0035") Global("C#AfHSoD_RevisedEnd","GLOBAL",1)~ THEN BDBELT totalrevised_trialscene
+~AreaCheck("bd0035") Global("C#AfHSoD_RevisedEnd","GLOBAL",2)~ THEN BDBELT totalrevised_trialscene
 @14 /* [Duke Belt]Citizens of Baldur's Gate! We are gathered to account for a great victory. Caelar is defeated! With the help of <CHARNAME>, the hero of Baldur's Gate, her malicious plans were stopped and a hellmouth was closed! All hail the hero of Baldur's Gate - and Dragonspear Castle! */
-DO ~SetGlobal("C#AfHSoD_RevisedEnd","GLOBAL",2)~
+DO ~SetGlobal("C#AfHSoD_RevisedEnd","GLOBAL",3)~
 = @15 /* [Duke Belt]But this great victory would not have been possible without the sacrifices of those that are no longer with us. We mourn the losses of our fallen soldiers, amongst them Skie Silvershield, our Duke Silvershield's daughter who was killed in mysterious circumstances. The palace priests are with the wounded now, to heal and resurrect where possible. */
 == BDNOBL90 @16 /* [female Bystander in public hearing SoD]There was a portal to Avernus? The gods help us! */
 == BDCOMM90 @17 /* [male Bystander in public hearing SoD]<CHARNAME> is a child of Bhaal! Just like Sarevok! Don't hide this from the people! */
@@ -141,9 +142,9 @@ ADD_STATE_TRIGGER bdbelt 2 ~False()~
 
 CHAIN
 IF WEIGHT #-1
-~AreaCheck("bd0035") Global("C#AfHSoD_RevisedEnd","GLOBAL",2)~ THEN BDBELT totalrevised_trialscene_01
+~AreaCheck("bd0035") Global("C#AfHSoD_RevisedEnd","GLOBAL",3)~ THEN BDBELT totalrevised_trialscene_01
 @20 /* [Duke Belt]Corporal Bence Duncan bore witness to the crucial incidents involving Caelar's dangerous dealings with a portal to Avernus at Dragonspear Castle and <CHARNAME>'s heroic deeds to close it. Corporal, please share your recollections. */
-DO ~SetGlobal("C#AfHSoD_RevisedEnd","GLOBAL",3)~
+DO ~SetGlobal("C#AfHSoD_RevisedEnd","GLOBAL",4)~
 == bdbence @21 /* Caelar and her advisor opened a portal to Avernus that lay dormant in the castle basement. It was <CHARNAME> and <PRO_HISHER> friends who not only defeated Caelar and her treacherous crusade, but did not hesitate to venture into the abyss to collect the fiend blood needed to seal the rift. */
 == BDNOBL90 @22 /* [female Bystander in public hearing SoD]<CHARNAME> descended into Avernus? And came out unscarthed?! Who would survive such a deed without losing their soul? */
 == bdbelt @23 /* Despite <PRO_HISHER> Bhaal heritage, <CHARNAME> stood a shining beacon against the dangers we were facing, for the good of this city, of the whole Sword Coast! Let <CHARNAME>'s deeds be the base to judge <PRO_HIMHER> on! */
@@ -152,7 +153,7 @@ END
 IF ~~ THEN DO ~SetGlobal("bd_mdd1697_plot","global",10)~ EXTERN BDBELT 6
 
 EXTEND_BOTTOM BDBELT 7 
-IF ~Global("C#AfHSoD_RevisedEnd","GLOBAL",3)~ THEN + before_silvershield_commotion
+IF ~Global("C#AfHSoD_RevisedEnd","GLOBAL",4)~ THEN + before_silvershield_commotion
 END
 
 APPEND BDBELT 
@@ -170,7 +171,6 @@ CHAIN
 IF ~~ THEN BDENTAR totalrevised_trialscene_04
 @26 /* My Skie! She is gone... It wasn't enough to slay her bodily and leave me childless. The murderer of my Skie destroyed her soul, too! Do you hear me, you monster? I will get to you, wherever you are! */
 DO ~SetGlobal("C#AfHSoD_RevisedEnd","GLOBAL",5)~
-= #%eet_2%69799 /* ~Tell me what you did with it, fiend! Before they send you to the gallows, tell me, what did you do with the dagger?~ [BD69799] */
 == BDBELT @27 /* Entar, whatever happened, let us first talk in quiet about it. */
 == BDENTAR @28 /* <CHARNAME>! You got my little girl killed! She was with you, and now her soul is gone - she is lost forever! */
 == bdbelt #%eet_2%70374 /* ~You do not want to do this, Entar...~ [BD70374] */
@@ -202,8 +202,8 @@ BEGIN c#afhent
 BEGIN c#afhblt
 IF WEIGHT #-1
 ~Global("C#AfHSoD_RevisedEnd","GLOBAL",6)~ THEN inside_palace
-SAY @35 /* <CHARNAME>, das Wissen um die Gefährlichkeit Eures Bhaalerbes breitet sich aus. Es geht das Gerücht um, dass Ihr in Avernus einen Pakt mit den Teufeln geschlossen hättet, um mächtiger zu werden. */
-++ @36 /* You're not serious. */ + inside_palace_02
+SAY @35 /* ~[Duke Belt]<CHARNAME>, knowledge of the danger of your bhaal heritage is spreading. Rumor has it that you made a pact with the fiends in Avernus to become more powerful.~ */
+++ @36 /* ~[PC Reply]You can't be serious.~ */ + inside_palace_02
 ++ @37 /* Something like that was to be expected, I fear. */ + inside_palace_02
 ++ @38 /* You do not believe this yourself, do you? */ + inside_palace_01
 ++ @39 /* Hmm... not a bad idea indeed. Shame I didn't think of this sooner. */ + inside_palace_01
@@ -227,40 +227,40 @@ SAY #%eet_2%69828 /* ~There are as many people in this city ready to fight and d
 END
 
 IF ~~ THEN inside_palace_03
-SAY @46 /* Wir, die Herzöge dieser Stadt und alle bei klarem Verstand sind nicht blind gegenüber Euren außergewöhnlichen Errungenschaften für diese Stadt, <CHARNAME>. Aber wir müssen auch an die Sicherheit und den Frieden in Baldurs Tor denken - und dieser ist durch Eure Anwesenheit nun bedroht. Wenn Euch auch nur etwas an dieser Stadt liegt, dann bereitet Euch freiwillig auf eine Abreise vor. */
+SAY @46 /* ~[Duke Belt]We, the Dukes of this city and all in their right minds are not blind to your extraordinary achievements for this city, <CHARNAME>. But we must also think of the security and peace of Baldur's Gate - and that is now threatened by your presence. If you care even a little about this city, then prepare to leave voluntarily.~ */
 IF ~~ THEN + skie_implications
 IF ~GlobalGT("C#AfH_PortalQuest","GLOBAL",0)~ THEN + portal_quest
 END
 
 IF ~~ THEN portal_quest
-SAY @47 /* Wir schicken Euch nicht einfach fort. Wir haben einen sehr wichtigen Auftrag für Euch. Das Portal unter der Burg Drachenspeer - es ist noch immer schlafend. Blut mit göttlichem Einschlag könnte es jederzeit wieder wecken - Euer Blut, aber auch das eines anderen Bhaalkindes. Wir sitzen sprichwörtlich auf einem Pulverfass, das die Schwertküste weiterhin bedroht - und von dem nun obendrein viele wissen. */
-= @48 /* Findet einen Weg, das Portal für immer zu verschließen, <CHARNAME>. Das ist die Aufgabe, die wir Euch stellen. Ihr seid der Held von Baldurs Tor - werdet diesem Namen gerecht und befreit uns von dieser Gefahr. Beweist im gleichen Zug, dass niemand hier sich vor Euch und Eurem Bhaalerbe fürchten muss. */
-++ @49 /* Das werde ich gerne tun. Habt Ihr Hinweise, wie ich vorgehen soll? */ + portal_quest_02
-++ @50 /* Wie stellt ihr Euch das vor? */ + portal_quest_02
-++ @51 /* Ach, das Blut des Höheren Teufels aus Avernus selbst zu besorgen hat noch nicht gereicht, ja? */ + portal_quest_01
-++ @52 /* Ich sehe nicht, warum ich das machen sollte. */ + portal_quest_01
-++ @53 /* Ich gehe, wenn Ihr darauf besteht und mich fortschickt, aber das Portal ist Euer Problem. */ + portal_quest_01
-++ @54 /* Ihr habt mir gar nichts zu befehlen. */ + portal_quest_01
+SAY @47 /* ~[Duke Belt]We are not just sending you away. We have a very important mission for you. The portal under Dragonspear Castle is still dormant. Blood with a divine touch could awaken it at any time - your blood, but also that of another Bhaalchild. We are literally sitting on a powder keg that continues to threaten the Sword Coast - and that many now know about, as well.~ */
+= @48 /* ~[Duke Belt]Find a way to close the portal forever, <CHARNAME>. That is the task we set for you. You are the hero of Baldur's Gate - live up to that name and free us from this danger. At the same time, prove that no one here need fear you and your Bhaal heritage.~ */
+++ @49 /* ~[PC Reply]I will do that. Do you have any hints as to how to proceed?~ */ + portal_quest_02
+++ @50 /* ~[PC Reply]How do you imagine that?~ */ + portal_quest_02
+++ @51 /* ~[PC Reply]Oh, getting the blood of the master fiend from Avernus itself wasn't enough, was it?~ */ + portal_quest_01
+++ @52 /* ~[PC Reply]I don't see why it has to be me.~ */ + portal_quest_01
+++ @53 /* ~[PC Reply]I will go, if you insist on sending me away. But the portal is your problem.~ */ + portal_quest_01
+++ @54 /* ~[PC Reply]I won't take orders from you.~ */ + portal_quest_01
 END
 
 IF ~~ THEN portal_quest_01
-SAY @55 /* Wir können Euch nicht dazu zwingen, das Portal zu schließen. Aber seid Euch gewiss, dass es die Voraussetzung dafür ist, dass Ihr hier wieder unbeschwert durch die Straßen wandeln könnt. Helft Ihr uns nicht, die Gefahr durch das Portal zu bannen, dann können wir Euch hier nicht mehr willkommen heißen - dem Frieden in dieser Stadt zuliebe. */ 
+SAY @55 /* ~[Duke Belt]We cannot force you to help close the portal. But know that it is a prerequisite for you to be able to walk the streets here again without being harassed. If you do not help us to rid the danger the portal poses, then you will not be welcomed here - for the sake of peace in this city.~ */ 
 IF ~~ THEN + portal_quest_02
 END
 
 IF ~~ THEN portal_quest_02
-SAY @56 /* Euer Weg wird Euch als erstes nach Amn leiten - das Land, mit dem Ihr uns vor einem Krieg bewahrt habt. Die Magier, die sich am besten mit dem Verschließen von Portalen auskennen, werden Incantatrices genannt, und Ihr werdet sie in Amn finden. */
-= @57 /* Nehmt dieses Schreiben. Es ist an den Botschafter der Verhüllten Magier in Athkatla, der Hauptstadt von Amn, gerichtet. Dieses Schreiben macht es deutlich, dass es sich um ein Gesuch der Herzöge von Baldurs Tor handelt und mit der entsprechenden Dringlichkeit behandelt werden sollte. */
-= @58 /* Wir werden parallel zu Eurer Reise die Autoritäten in Athkatla von Eurem Erscheinen informieren - nicht bezüglich Eures Bhaalerbes oder was hier geschah, sondern als Abgesandter auf der Suche nach einem Weg, das Portal für immer zu schließen. */
+SAY @56 /* ~[Duke Belt]Your path will lead you first to Amn - the land with which you saved us from war. The mages who know best how to close portals are called Incantatrices, and you will find them there.~ */
+= @57 /* ~[Duke Belt]Take this letter. It is addressed to the ambassador of the Cowled Mages in Athkatla, the capital of Amn. This letter makes it clear that this is a request from the Dukes of Baldur's Gate and should be treated with the appropriate urgency.~ */
+= @58 /* ~[Duke Belt]We will inform the authorities in Athkatla of your appearance in parallel with your journey - not regarding your Bhaal heritage or what happened here, but as an emissary in search of a way to close the portal forever.~ */
 IF ~~ THEN DO ~GiveItemCreate("c#afhpss",Player1,1,0,0) SetGlobal("C#AfHSoD_RevisedEnd","GLOBAL",7)
 SetGlobal("C#AfH_PortalQuest","GLOBAL",2)~ UNSOLVED_JOURNAL @90001 + skie_implications
 END
 
 IF ~~ THEN skie_implications
-SAY @59 /* Damit wären wir bei der zweiten Sache. Skies Seele ist verschwunden, und das hat unter den Leuten zu den wildesten Verschwörungen über Eure Rolle darin geführt, die die erwähnten Gerüchte noch befeuert haben. Einige glauben, dass Ihr in Avernus für einen Pakt mit den Teufeln die Seelen der Bürger von Baldurs Tor verkauft hättet. */
-++ @60 /* (seufz) */ + skie_implications_03
-++ @61 /* Was genau ist denn mit Skies Seele geschehen? */ + skie_implications_03
-++ @62 /* Ich habe damit nichts zu tun, das wisst Ihr hoffentlich. */ + skie_implications_02
+SAY @59 /* ~[Duke Belt]This brings us to another important topic. Skie's soul has disappeared, and this has led to the wildest conspiracies among people about your role in it, which have fueled the aforementioned rumors. Some believe that you sold the souls of the citizens of Baldur's Gate in Avernus for a pact with the fiends.~ */
+++ @60 /* ~[PC Reply](sigh)~ */ + skie_implications_03
+++ @61 /* ~[PC Reply]What exactly happened with Skie's soul?~ */ + skie_implications_03
+++ @62 /* ~[PC Reply]I surely hope you are aware that I have nothing to do with this.~ */ + skie_implications_02
 + ~GlobalGT("C#AfH_PortalQuest","GLOBAL",0)~ + @63 /* Hmm, that's not a bad idea, actually. You said the portal can be repopened with my blood? */ + skie_implications_01
 END
 
@@ -306,18 +306,20 @@ CheckStatLT(Player1,17,WIS)~ + @73 /* I do not remember there being a dagger. */
 END
 
 /* the following will allow only one romance interest to speak (in case the player has a multi romance tweak), but it will at least not let the dialogue break in case multi romances are active */
-IF ~~ THEN byefornow_01
-SAY @74 /* Help us, <CHARNAME>, and there will be a chance the city comes to rest again. Do what we requested of you and we *will* be able to soothe any remaining riots that are occuring in your name on our city's street. */
-IF ~~ THEN + byefornow_02
-IF ~Global("bd_corwin_romanceactive","global",2)~ THEN DO ~ActionOverride("Corwin",SetDialog("BDSCHAE2"))~ + byefornow_02
-IF ~Global("bd_dorn_romanceactive","global",2)~ THEN DO ~ActionOverride("Dorn",SetDialog("bddorn"))~ + byefornow_02
-IF ~Global("bd_glint_romanceactive","global",2)~ THEN DO ~ActionOverride("Glint",SetDialog("bdglint"))~ + byefornow_02
-IF ~Global("bd_neera_romanceactive","global",2)~ THEN DO ~ActionOverride("Neera",SetDialog("bdneera"))~ + byefornow_02
-IF ~Global("bd_rasaad_romanceactive","global",2)~ THEN DO ~ActionOverride("Rasaad",SetDialog("bdrasaad"))~ + byefornow_02
-IF ~Global("bd_safana_romanceactive","global",2)~ THEN DO ~ActionOverride("Safana",SetDialog("bdsafana"))~ + byefornow_02
-IF ~Global("bd_viconia_romanceactive","global",2)~ THEN DO ~ActionOverride("Viconia",SetDialog("bdviconi"))~ + byefornow_02
-IF ~Global("bd_voghiln_romanceactive","global",2)~ THEN DO ~ActionOverride("Voghiln",SetDialog("bdvoghil"))~ + byefornow_02
+CHAIN
+IF ~~ THEN c#afhent byefornow_01
+@237 /* Skie was killed because of you, <CHARNAME>! She was a pawn in some scheme unfolding around you because of your heritage. They *will* come for you again, and you will let us know if that happens. It's... it's all we got... */
+== c#afhblt @74 /* Help us, <CHARNAME>, and there will be a chance the city comes to rest again. Do what we requested of you and we *will* be able to soothe any remaining riots that are occuring in your name on our city's street. */
 END
+IF ~~ THEN EXTERN c#afhblt byefornow_02
+IF ~Global("bd_corwin_romanceactive","global",2)~ THEN DO ~ActionOverride("Corwin",SetDialog("BDSCHAE2"))~ EXTERN c#afhblt byefornow_02
+IF ~Global("bd_dorn_romanceactive","global",2)~ THEN DO ~ActionOverride("Dorn",SetDialog("bddorn"))~ EXTERN c#afhblt byefornow_02
+IF ~Global("bd_glint_romanceactive","global",2)~ THEN DO ~ActionOverride("Glint",SetDialog("bdglint"))~ EXTERN c#afhblt byefornow_02
+IF ~Global("bd_neera_romanceactive","global",2)~ THEN DO ~ActionOverride("Neera",SetDialog("bdneera"))~ EXTERN c#afhblt byefornow_02
+IF ~Global("bd_rasaad_romanceactive","global",2)~ THEN DO ~ActionOverride("Rasaad",SetDialog("bdrasaad"))~ EXTERN c#afhblt byefornow_02
+IF ~Global("bd_safana_romanceactive","global",2)~ THEN DO ~ActionOverride("Safana",SetDialog("bdsafana"))~ EXTERN c#afhblt byefornow_02
+IF ~Global("bd_viconia_romanceactive","global",2)~ THEN DO ~ActionOverride("Viconia",SetDialog("bdviconi"))~ EXTERN c#afhblt byefornow_02
+IF ~Global("bd_voghiln_romanceactive","global",2)~ THEN DO ~ActionOverride("Voghiln",SetDialog("bdvoghil"))~ EXTERN c#afhblt byefornow_02
 
 
 CHAIN
@@ -367,13 +369,13 @@ END
   IF ~~ THEN REPLY #%eet_2%69795 /* ~I don't know what happened to Skie. But I intend to find out.~ */ DO ~SetGlobal("C#AfH_SouldaggerQuest","GLOBAL",1)
 //#70073 Skie's Soul
 AddJournalEntry(@90002,QUEST)
-AddJournalEntry(@90003,QUEST)~ EXTERN c#afhblt byefornow_01
+AddJournalEntry(@90003,QUEST)~ EXTERN c#afhent byefornow_01
 ++ @96 /* I can't promise anything. */ DO ~SetGlobal("C#AfH_SouldaggerQuest","GLOBAL",1)
 AddJournalEntry(@90002,QUEST)
-AddJournalEntry(@90003,QUEST)~ EXTERN c#afhblt byefornow_01
+AddJournalEntry(@90003,QUEST)~ EXTERN c#afhent byefornow_01
   IF ~~ THEN REPLY #%eet_2%69796 /* ~Cease your whimpering, man. You're embarrassing yourself.~ */ DO ~SetGlobal("C#AfH_SouldaggerQuest","GLOBAL",1)
 AddJournalEntry(@90002,QUEST)
-AddJournalEntry(@90003,QUEST)~ EXTERN c#afhblt byefornow_01
+AddJournalEntry(@90003,QUEST)~ EXTERN c#afhent byefornow_01
 
 
 /* PC is free to roam the room, sort their gear etc. but can't leave the level. Clicking on the bed will trigger a rest if all visitors are done. Hooded Man will come *after* the sleeping - it's illogical that the PC would just go to bed after having that visit. */
