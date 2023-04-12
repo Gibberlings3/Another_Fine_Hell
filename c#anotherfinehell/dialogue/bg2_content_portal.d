@@ -1,1 +1,0 @@
-/* In Governor Building: Embassador from Baldur's Gate. Can be reported to if PC knows anything about Irenicus etc. */
