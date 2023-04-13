@@ -100,21 +100,18 @@ If you have installation problems or encounter any bugs, please post your bug re
 
 COMPATIBILITY NOTE
 
+Install Another fine Hell as an early quest mod, before NPC mods.
+
 Another fine Hell mod is not compatible with any of the ending tweaks from Jastey's SoD Tweakpack ("8: SoD Ending: jastey's Tweaks").
 
-It is compatible with Imoen4Ever and my SoD Tweakpack in the install order:
--Imoen4Ever
--Another fine Hell
--Jastey's SoD Tweakpack
-
-Install Another fine Hell as an early quest mod, before NPC mods.
+Beginning with Imoen4Ever v11, install the SoD components of I4E after Another fine Hell so Imoen has her interjections at the right places.
   
 
 
 NOTE TO MODDERS 
 
 This mod uses the standard cutscene "bdcut61.bcs" which handles the leaving of NPCs out of the party after the slayer-dream-sequence. The end of the cutscene is altered, but if you add a script block for your mod NPC as described in my "Modding Tutorial Part 2: Make Your NPC Comment and Move Along at the End of SoD" (link below), this mod will be compatible with your NPC mod.
-BUT: if your NPC is supposed to be kidnapped with the PC and turn up in Irenicus Dungeon, you can also let them remain in the party. If this is the case, tagg the script block for the NPC's leaving with "Global("C#FtGSoD_RevisedEnd","GLOBAL",0)" so your NPC will stay with the PC in case this altered SoD ending is playing.
+BUT: if your NPC is supposed to be kidnapped with the PC and turn up in Irenicus Dungeon, you can also let them remain in the party. If this is the case, tagg the script block for the NPC's leaving with "Global("C#AfHSoD_RevisedEnd","GLOBAL",0)" so your NPC will stay with the PC in case this altered SoD ending is playing.
 Note: the setting of "Global("bd_plot","global",591)" which handles the "PC is murder supect NPC reactions" in bd4100.are is skipped with this mod so they do not show.
 
 In addition, parting of the group will now happen after the public scene upon returning to Baldur's Gate. There is one line of Duke Belt where your NPC could give a line, independent on whether they would stay or go. For this, use this example code from Ascalon to add an interjection for your NPC. Leaving will then be handled via your mod NPC's normale script block in bdcut61.bcs as mentioned above:
@@ -127,7 +124,7 @@ ACTION_IF FILE_EXISTS_IN_GAME ~c#afh3.bcs~ THEN BEGIN
   COPY_EXISTING ~bdcut61.bcs~ ~override~
      DECOMPILE_AND_PATCH BEGIN
         REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~(\InParty("ACBre")\)~ ~\1
-Global("C#FtGSoD_RevisedEnd","GLOBAL",0)~
+Global("C#AfHSoD_RevisedEnd","GLOBAL",0)~
      END
   BUT_ONLY_IF_IT_CHANGES 
 
@@ -181,6 +178,14 @@ SoD Walkthrough at GameBanshee http://www.gamebanshee.com/baldursgate/walkthroug
 
 
 HISTORY
+Version Alpha_230408
+-PC should not be stuck on bed after last night in Palace.
+-Unified check variable for NPC crossmod to AfH prefix to "Global("C#AfHSoD_RevisedEnd","GLOBAL",0)".
+-Revised install order: for Imoen4Ever v11, AfH should be installed before I4E for the crossmod.
+-Added a line to make it more clear that Duke Silvershield does not accuse the PC of having done the murder him/herself.
+-Typo corrections.
+
+
 Version Alpha_220923
 -NPCs should leave and cutscene should play correctly (variable should be set if Imoen is in group, too).
 -Items dropped by NPCs upon leaving should be accessible in third floor of palace.

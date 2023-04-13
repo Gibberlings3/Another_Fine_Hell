@@ -308,8 +308,10 @@
 @235  = ~[PC Reply]The murderer of Skie - I know who it is, it was the hooded man that was stalking me for my Bhaal heritage.~
 
 @236  = ~[Imoen]Are we ready to go then?~
+
+/* new for vAlpha_230408 */
+@237  = ~Skie was killed because of you, <CHARNAME>! She was a pawn in some scheme unfolding around you because of your heritage. They *will* come for you again, and you will let us know if that happens. It's... it's all we got...~
 /*
-@237  = ~
 @238  = ~
 @239  = ~
 @240  = ~

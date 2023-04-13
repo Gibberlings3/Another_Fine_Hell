@@ -243,6 +243,7 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("C#AfH_jail_visitors","c#afh3",14)
+		ActionOverride(Player1,JumpToPoint([184.428]))
 		ActionOverride(Player2,SetSequence(SEQ_AWAKE))
 		ActionOverride(Player3,SetSequence(SEQ_AWAKE))
 		ActionOverride(Player4,SetSequence(SEQ_AWAKE))
@@ -267,3 +268,14 @@ THEN
 		StartCutScene("c#afh6b")
 END
 
+/* failsafe: PC should not get stuck on bed */
+IF
+	GlobalGT("bd_plot","global",619)
+	Global("C#_MovePCfromBed","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		ActionOverride(Player1,JumpToPoint([202.498]))
+		SetGlobal("C#_MovePCfromBed","MYAREA",1)
+		SetInterrupt(TRUE)
+END

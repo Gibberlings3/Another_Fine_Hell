@@ -2,7 +2,7 @@ BACKUP ~c#anotherfinehell/backup~
 AUTHOR ~https://baldurs-gate.de/index.php?threads/another-fine-hell-mod-f%C3%BCr-sod.45305/~ 
 
 
-VERSION ~Alpha_220923~
+VERSION ~Alpha_230408~
 
 README ~c#anotherfinehell/readme.anotherfinehell.%LANGUAGE%.txt~ ~c#anotherfinehell/readme.anotherfinehell.english.txt~
 
@@ -279,7 +279,7 @@ ACTION_IF MOD_IS_INSTALLED ~imoen_forever.tp2~ ~11~ THEN BEGIN
   COPY_EXISTING ~bdcut61.bcs~ ~override~
      DECOMPILE_AND_PATCH BEGIN
         REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~(\InParty("%IMOEN_DV%")\)~ ~\1
-Global("C#FtGSoD_RevisedEnd","GLOBAL",0)~
+Global("C#AfHSoD_RevisedEnd","GLOBAL",0)~
      END
   BUT_ONLY_IF_IT_CHANGES 
 END //Imoen4Ever
