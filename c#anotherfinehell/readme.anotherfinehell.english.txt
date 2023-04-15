@@ -178,6 +178,10 @@ SoD Walkthrough at GameBanshee http://www.gamebanshee.com/baldursgate/walkthroug
 
 
 HISTORY
+
+Version Alpha_230415
+-French version completed, by JohnBob.
+
 Version Alpha_230408
 -PC should not be stuck on bed after last night in Palace.
 -Unified check variable for NPC crossmod to AfH prefix to "Global("C#AfHSoD_RevisedEnd","GLOBAL",0)".
