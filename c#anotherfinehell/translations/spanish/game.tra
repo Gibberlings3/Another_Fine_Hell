@@ -1,0 +1,39 @@
+/* c#anotherfinehell.tp2 */
+@0  = ~El Consejo de los Cuatro puede no estar dispuesto a estar a vuestro lado, pero yo siempre lo estaré. Ahora pongamos algo de distancia entre vos y la Puerta de Baldur, ¿de acuerdo?~
+@1  = ~Puede haber parecido diferente desde dentro de vuestra habitación de palacio, pero tenéis más amigos de los que creíais.~
+@2  = ~Estoy bastante segura de que esto es lo suficientemente lejos de la Puerta de Baldur por ahora. ¿Podemos tomar un descanso, sólo por un minuto?~
+@3  = ~Solicitud al embajador de los Magos Encapuchados~
+@4  = ~Esta es la petición al embajador de los Magos Encapuchados por parte de los Duques de Puerta de Baldur, para que os apoye en vuestra empresa de encontrar los medios para cerrar el portal al Averno bajo el Castillo Dragasta de una vez por todas.
+Se supone que debéis viajar a Athkatla en Amn y mostrar esto a un representante de los Magos Encapuchados para buscar la ayuda de un Incántatrix.~
+/*
+@5  = 
+@6  = 
+@7  = 
+@8  = 
+@9  = 
+*/
+
+/* add_bdchains.baf */
+@100 = ~¡Nos salvasteis!~
+@101 = ~¿Qué habéis hecho bajo el castillo de Dragasta?~
+@102 = ~¡Salvasteis a Fuertepuente de la cruzada. ¡Nos salvasteis a todos de Caelar!~
+@103 = ~¡Aquí viene nuestro héroe!~ ~¡Aquí viene nuestra heroína!~
+@104 = ~¡Sed nuestro héroe! ¡No necesitamos otro Sarevok!~ ~¡Sed nuestra heroína! ¡No necesitamos otro Sarevok!~
+@105 = ~¡Nos salvasteis a todos!~
+@106 = ~¡Viva el victorioso Puño Llameante!~
+@107 = ~¡Un portal al Averno! ¡Que los dioses se apiaden de nuestras almas!~
+@108 = ~¡Caelar se ha ido! ¡Nadie llorará su muerte!~
+@109 = ~¡Viva nuestro héroe!~ ~¡Viva nuestra heroína!~
+@110 = ~¡<CHARNAME> hizo un pacto con los demonios!~
+@111 = ~¡Hijo de Bhaal! ¡No confiamos en vos!~ ~¡Hija de Bhaal! ¡No confiamos en vos!~
+@112 = ~¿Sois otro Sarevok? ¡Veremos vuestra verdadera naturaleza, hijo de Bhaal!~ ~¿Sois otro Sarevok? ¡Veremos vuestra verdadera naturaleza, hija de Bhaal!~
+
+/* c#afh3a.baf */
+@120 = ~Os abrís camino por vuestra cuenta, rápidamente antes de que los otros soldados encuentren a su camarada muerto.~
+@121 = ~El piso de abajo está lleno de soldados, presentes para protegeros, y probablemente también para vigilaros.~
+@122 = ~No hay nada útil que podáis hacer abajo, mejor preparaos para vuestra partida y descansad hasta que llegue el momento de partir.~
+
+/* c#afh3bd.baf */
+@125 = ~En el momento en que queréis prepararos para el descanso, alguien sube las escaleras.~
+@126 = ~Os preparáis para el descanso.~
+

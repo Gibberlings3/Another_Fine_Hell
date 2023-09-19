@@ -5,7 +5,7 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("BD_Chapter_Save","GLOBAL",13)
-		SaveGame(25)
+		SaveGame(%SOD_LASTSAVE%)
 END
 
 /* Global("C#AfH_jail_visitors","c#afh3",6) will be set: after romance interest visited */

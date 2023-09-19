@@ -35,7 +35,7 @@ The mod consists of three components:
 -----------------------------------
 This is the main and required component of the mod. It changes the ending of SoD, with Bence Duncan starting his dialogue after he found the PC and Skie on the floor after the slayer-dream-sequence.
 
-Public's perception of the PC being a child of Bhaal togather with returning unscarthed from Avernus is what leads to the riots in the city's streets. Skie's death will be noted but only plays a side role that adds to the overall hysteria.
+Public's perception of the PC being a child of Bhaal together with returning unscarthed from Avernus is what leads to the riots in the city's streets. Skie's death will be noted but only plays a side role that adds to the overall hysteria.
 
 This revised ending keeps all key moments: Bence Duncan and Corwin find the PC and take them back to Baldur's Gate, there is a public scene were the PC's Bhaal heritage is announced publicly, turmoil and chaos in the streets spread so the PC has to retreat to their quarters inside the palace. The visit of the Hooded Man, Corwin, and any romance interests will trigger as normal, although the Hooded Man will only appear after the PC went to bed. Murder accusations in the romance interests' dialogues were removed or altered appropriately.
 Basically, the atmosphere in this revised ending is changed in so far, as it is not the single event of Skie's death, but what the PC did and where they went in combination with their Bhaal heritage that triggers the ambiguous chaotic reactions of the city's people. Also, reactions at the public scene make it clear that there is haters and followers to the PC both. 
@@ -114,7 +114,7 @@ This mod uses the standard cutscene "bdcut61.bcs" which handles the leaving of N
 BUT: if your NPC is supposed to be kidnapped with the PC and turn up in Irenicus Dungeon, you can also let them remain in the party. If this is the case, tagg the script block for the NPC's leaving with "Global("C#AfHSoD_RevisedEnd","GLOBAL",0)" so your NPC will stay with the PC in case this altered SoD ending is playing.
 Note: the setting of "Global("bd_plot","global",591)" which handles the "PC is murder supect NPC reactions" in bd4100.are is skipped with this mod so they do not show.
 
-In addition, parting of the group will now happen after the public scene upon returning to Baldur's Gate. There is one line of Duke Belt where your NPC could give a line, independent on whether they would stay or go. For this, use this example code from Ascalon to add an interjection for your NPC. Leaving will then be handled via your mod NPC's normale script block in bdcut61.bcs as mentioned above:
+In addition, parting of the group will now happen after the public scene upon returning to Baldur's Gate. There is one line of Duke Belt where your NPC could give a line, independent on whether they would stay or go. For this, use this example code from Ascalon's Breagar to add an interjection for your NPC. Leaving will then be handled via your mod NPC's normale script block in bdcut61.bcs as mentioned above:
 
 ------------ compatibility code, all into tp2:
 /* Another Fine Hell */
@@ -149,6 +149,7 @@ END //Another Fine Hell
 
 CREDITS
 
+ElGameViejuno: Spanisch Translation (vAlpha_230919)
 JohnBob: French translation (vAlpha_211220)
 Lauriel: ideas 
 Machiavélique: proofreading (French) (vAlpha_220123)
@@ -178,6 +179,11 @@ SoD Walkthrough at GameBanshee http://www.gamebanshee.com/baldursgate/walkthroug
 
 
 HISTORY
+
+Version Alpha_230919
+-Spanish version added, by ElGamerViejuno.
+-(EET) Last save at end should not overwrite Prologue Save.
+-Typo corrections.
 
 Version Alpha_230415
 -French version completed, by JohnBob.

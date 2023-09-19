@@ -2,7 +2,7 @@ BACKUP ~c#anotherfinehell/backup~
 AUTHOR ~https://baldurs-gate.de/index.php?threads/another-fine-hell-mod-f%C3%BCr-sod.45305/~ 
 
 
-VERSION ~Alpha_230415~
+VERSION ~Alpha_230919~
 
 README ~c#anotherfinehell/readme.anotherfinehell.%LANGUAGE%.txt~ ~c#anotherfinehell/readme.anotherfinehell.english.txt~
 
@@ -34,9 +34,11 @@ END
 
 ACTION_IF GAME_IS ~bgee~ THEN BEGIN
   OUTER_SPRINT ~eet_2~ ~~
+  OUTER_SPRINT ~SOD_LASTSAVE~ ~25~
 END
 ACTION_IF GAME_IS ~eet~ THEN BEGIN
   OUTER_SPRINT ~eet_2~ ~2~
+  OUTER_SPRINT ~SOD_LASTSAVE~ ~39~
 END
 
 //////////////////////////////////////////////////////////////////////
@@ -76,9 +78,7 @@ ACTION_IF !FILE_EXISTS ~c#anotherfinehell/install/c#anotherfinehellinstall.mrk~ 
   END // c#sodtweaksinstall.mrk
 
  //reloading of tras:
-  LOAD_TRA ~c#anotherfinehell/translations/autotra/english/game.tra~
   LOAD_TRA ~c#anotherfinehell/translations/autotra/%LANGUAGE%/game.tra~
-  LOAD_TRA ~c#anotherfinehell/translations/autotra/english/journal.tra~
   LOAD_TRA ~c#anotherfinehell/translations/autotra/%LANGUAGE%/journal.tra~
 
 END //ALWAYS
@@ -95,6 +95,12 @@ LANGUAGE ~French~
          ~c#anotherfinehell/translations/french/setup.tra~
 	 ~c#anotherfinehell/translations/french/game.tra~
 	 ~c#anotherfinehell/translations/french/journal.tra~
+
+LANGUAGE ~Spanish~
+         ~spanish~   
+         ~c#anotherfinehell/translations/spanish/setup.tra~
+	 ~c#anotherfinehell/translations/spanish/game.tra~
+	 ~c#anotherfinehell/translations/spanish/journal.tra~
 
 BEGIN @100000 /* ~Another Fine Hell - Optional Ending for SoD and BGII Closure~ */ DESIGNATED 0
 LABEL C#AnotherFineHell-Main
