@@ -1,0 +1,318 @@
+/* Note to translators: all comments are meant as info and service, without expectations that exact phrases from the original game / my tweakpack should be used. */
+/* Please leave the notes in as it enables me to compare translations using WinMerge. */
+
+/* @0: Corporal Bence Duncan finds PC and Skie */
+@0    = ~[Corporal Bence Duncan]¡Vos... eráis responsable de la seguridad de Skie! ¡¿Y ahora ella yace aquí, muerta y empapada en su propia sangre?! ¡Está muerta! ¡La hija del Duque Escudo de Plata fue asesinada!~ [c#ablank]
+/* @1 - @13: Bence Duncan and Captain Corwin at the crime scene */
+/* @1: Same as @2 from c#sodtweaks/translations/%s/sod_revisedend.tra */
+@1    = ~[Corporal Bence Duncan]¡Decidnos qué ha pasado!~ [c#ablank]
+/* @2: Same as @3 from c#sodtweaks/translations/%s/sod_revisedend.tra */
+@2    = ~[PC Reply]No sé lo que pasó... todo está borroso. Pero creo haber sido engañado para matar a Skie. Lo siento de verdad.~ ~[PC Reply]No sé lo que pasó... todo está borroso. Pero creo haber sido engañada para matar a Skie. Lo siento de verdad.~
+/* @3: Same as @4 from c#sodtweaks/translations/%s/sod_revisedend.tra */
+@3    = ~[PC Reply]Fue una poderosa ilusión, de un nuevo enemigo que me acecha desde hace algún tiempo. Skie quedó atrapada en medio mientras yo intentaba defenderme... Lo siento.~
+@4    = ~[PC Reply]Fue el hombre encapuchado. Creo que quería... probar algo, pero se me escapa por qué Skie tendría que morir por esto.~
+/* @5: Same as @5 from c#sodtweaks/translations/%s/sod_revisedend.tra */
+@5    = ~[PC Reply]Yo no la maté, si eso es lo que pensáis. Esto fue una trampa.~
+@6    = ~[PC Reply]¡¿Se suponía que debía protegerla?! Por los nueve infiernos, se suponía que... VOS eráis responsable. No me culpéis por vuestra incompetencia.~
+/* @7: Same as @6 from c#sodtweaks/translations/%s/sod_revisedend.tra */
+@7    = ~[PC Reply]Sea como sea, el peligro parece haber terminado por ahora.~
+@8    = ~[Corporal Bence Duncan]No hay arma homicida... ¡¿Dónde está el arma del crimen?! Tenemos que asegurar los alrededores, ¡AHORA!~
+/* @9: Same as @8 from c#sodtweaks/translations/%s/sod_revisedend.tra */
+@9    = ~[Corporal Bence Duncan]¡¿Vos... vos habríais causado el golpe que la mató?!~
+/* @10: NOT the same as @10 from c#sodtweaks but very similar */
+@10   = ~[Corporal Bence Duncan]Todo está relacionado con vuestra malvada herencia divina, estoy seguro de ello. Al igual que Sarevok, ¡todo lo que traéis a la gente que os rodea es muerte y destrucción! ¡Sólo los dioses saben lo que hicisteis allá abajo para sobrevivir en el Averno!~
+@11   = ~[Corporal Bence Duncan]Esa información es de gran valor para el Duque Escudo de Plata. Estará más que ansioso por saber quién es el responsable de la muerte de su hija.~
+@12   = ~[Corporal Bence Duncan]Insolente...~
+/* @13: NOT the same as @11 from c#sodtweaks but very similar */
+@13   = ~[Corporal Bence Duncan]Se acabaron las celebraciones. Esta mañana nos ha traído trágicos acontecimientos que nos devuelven a la tierra con un profundo sentimiento de amargura, a pesar de la tremenda victoria de ayer, a la que vos contribuisteis en gran medida. Partiremos inmediatamente y llevaremos a Skie ante los clérigos ducales, y vos vendréis con nosotros.~
+/* @15: NOT the same as @12 from c#sodtweaks but similar */
+@14   = ~[Duke Belt]¡Ciudadanos de Puerta de Baldur! Estamos aquí reunidos para celebrar una gran victoria. ¡Caelar ha sido derrotada! Con la ayuda de <CHARNAME>, el héroe de Puerta de Baldur, ¡sus malvados planes fueron detenidos y la boca del infierno se ha cerrado! ¡Viva el héroe de Puerta de Baldur y el Castillo Dragasta!~ ~[Duke Belt]¡Ciudadanos de Puerta de Baldur! Estamos aquí reunidos para celebrar una gran victoria. ¡Caelar ha sido derrotada! Con la ayuda de <CHARNAME>, la heroína de Puerta de Baldur, ¡sus malvados planes fueron detenidos y la boca del infierno se ha cerrado! ¡Viva la heroína de Puerta de Baldur y el Castillo Dragasta!~ [c#ablank]
+@15   = ~[Duke Belt]Pero esta gran victoria no habría sido posible sin los sacrificios de los que ya no están con nosotros. Lloramos las pérdidas de nuestros soldados caídos, entre ellos Skie Escudo de Plata, la hija de nuestro Duque Escudo de Plata que fue asesinada en misteriosas circunstancias. Los clérigos de palacio están ahora con los heridos, para curarlos y resucitarlos en la medida de lo posible.~
+@16   = ~[female Bystander in public hearing SoD]¿Había un portal al Averno? ¡Que los dioses nos ayuden!~
+@17   = ~[male Bystander in public hearing SoD]<CHARNAME>, ¡es un hijo de Bhaal! ¡Igual que Sarevok! ¡No ocultéis esto a la gente!~ ~[male Bystander in public hearing SoD]<CHARNAME>, ¡es una hija de Bhaal! ¡Igual que Sarevok! ¡No ocultéis esto a la gente!~
+@18   = ~[Duke Belt]<CHARNAME>, lo que era un mero rumor cuando derrotasteis a Sarevok es ahora de dominio público, que vos también sois un hijo de Bhaal. ¡Ciudadanos de Puerta de Baldur! Sí, es verdad, <CHARNAME> es un hijo de Bhaal.~ ~[Duke Belt]<CHARNAME>, lo que era un mero rumor cuando derrotasteis a Sarevok es ahora de dominio público, que vos también sois una hija de Bhaal. ¡Ciudadanos de Puerta de Baldur! Sí, es verdad, <CHARNAME> es una hija de Bhaal.~
+@19   = ~[Duke Belt]La herencia divina de <CHARNAME> puede resultar chocante para muchos de nosotros, pero a veces se necesita una persona excepcional para ser el héroe del pueblo. <CHARNAME> demostró ser el salvador de esta ciudad, y no sólo una vez, ¡sino dos!~ ~[Duke Belt]La herencia divina de <CHARNAME> puede resultar chocante para muchos de nosotros, pero a veces se necesita una persona excepcional para ser el héroe del pueblo. <CHARNAME> demostró ser la salvadora de esta ciudad, y no sólo una vez, ¡sino dos!~
+/* #69760 changed */
+@20   = ~[Duke Belt]El cabo Bence Duncan fue testigo de las peligrosas acciones de Caelar que condujeron a la apertura de un portal al Averno en el Castillo Dragasta y de los heroicos esfuerzos de <CHARNAME> para cerrarlo. Cabo, por favor compartid los eventos que presenció.~
+@21   = ~[Corporal Bence Duncan]Caelar y su consejero abrieron un portal al Averno que yacía latente en el sótano del castillo. Fueron <CHARNAME> y sus amigos quienes no sólo derrotaron a Caelar y su traicionera cruzada, sino que no dudaron en aventurarse en el abismo para recoger la sangre de demonio necesaria para sellar la grieta.~
+@22   = ~[female Bystander in public hearing SoD]<CHARNAME>, ¿descendió al Averno? ¡¿Y salió ileso?! ¿Quién sobreviviría a tal hazaña sin perder su alma?~ ~[female Bystander in public hearing SoD]<CHARNAME>, ¿descendió al Averno? ¡¿Y salió ilesa?! ¿Quién sobreviviría a tal hazaña sin perder su alma?~
+@23   = ~[Duke Belt]A pesar de ser un hijo de Bhaal, <CHARNAME> fue un faro brillante contra los peligros a los que nos enfrentábamos, ¡por el bien de esta ciudad, de toda la Costa de la Espada! ¡Que los hechos de <CHARNAME> sean la base para juzgarlo!~ ~[Duke Belt]A pesar de ser una hija de Bhaal, <CHARNAME> fue un faro brillante contra los peligros a los que nos enfrentábamos, ¡por el bien de esta ciudad, de toda la Costa de la Espada! ¡Que los hechos de <CHARNAME> sean la base para juzgarla!~
+@24   = ~[male Bystander in public hearing SoD]¡Viva nuestro héroe! ¡Viva <CHARNAME>! Sois el protector de la ciudad.~ ~[male Bystander in public hearing SoD]¡Viva nuestra heroína! ¡Viva <CHARNAME>! Sois la protectora de la ciudad.~
+/* #69792 changed */
+@25   = ~[Duke Belt]¡En este día de la victoria! Ahora nosotros... ¿Qué es todo ese alboroto?~
+/* #69797 changed */
+@26   = ~[Duke Silvershield]¡Mi Skie! Se ha ido... No le bastó con matarla y dejarme sin mi hija. ¡El asesino de mi Skie también destruyó su alma! ¿Me oís, monstruo? ¡Os encontraré, donde quiera que estéis!~
+@27   = ~[Duke Belt]Entar, sea lo que sea lo que ha pasado, hablemos primero en voz baja de ello.~
+@28   = ~[Duke Silvershield]¡<CHARNAME>! ¡Hicisteis que mataran a mi pequeña! Ella estaba con vos, y ahora su alma se ha ido... ¡está perdida para siempre!~
+/* #69793 changed */
+@29   = ~[Duke Silvershield]No me digáis lo que quiero... Yo SÉ lo que quiero. Quiero al asesino de mi pequeña Skie... ¡Quiero su alma de vuelta!~
+@30   = ~[female Bystander in public hearing SoD]¿El alma de la chica Escudo de Plata desapareció? ¿Cómo es posible?~
+@31   = ~[male Bystander in public hearing SoD]¡Es el hijo de Bhaal! ¡Es <CHARNAME>! En Averno el hizo un pacto con los demonios y ahora se están llevando nuestras almas.~ ~[male Bystander in public hearing SoD]¡Es la hija de Bhaal! ¡Es <CHARNAME>! En Averno el hizo un pacto con los demonios y ahora se están llevando nuestras almas.~
+@32   = ~[female Bystander in public hearing SoD]<CHARNAME>, ¡es aún más peligroso que Sarevok! ¡Que los dioses nos ayuden contra este engendro de Bhaal!~ ~[female Bystander in public hearing SoD]<CHARNAME>, ¡es aún más peligrosa que Sarevok! ¡Que los dioses nos ayuden contra esta engendro de Bhaal!~
+@33   = ~[male Bystander in public hearing SoD]¡No, <CHARNAME> es un héroe! ¡Aclamemos a <CHARNAME>, el hijo de Bhaal que se alzará sobre todos los demás!~ ~[male Bystander in public hearing SoD]¡No, <CHARNAME> es una heroína! ¡Aclamemos a <CHARNAME>, la hija de Bhaal que se alzará sobre todos los demás!~
+@34   = ~[Duke Belt]A pesar de los trágicos acontecimientos, ¡hoy es un día de celebración! ¡Todos, festejen en honor a nuestra victoria! <CHARNAME>, tenemos que irnos. Salgamos de aquí antes de que esto se nos vaya de las manos.~
+@35   = ~[Duke Belt]<CHARNAME>, los rumores sobre vuestra herencia malvada se están extendiendo. Algunos dicen que hicisteis un pacto con los demonios del Averno para ser más poderoso.~ ~[Duke Belt]<CHARNAME>, los rumores sobre vuestra herencia malvada se están extendiendo. Algunos dicen que hicisteis un pacto con los demonios del Averno para ser más poderosa.~
+@36   = ~[PC Reply]No podéis hablar en serio.~
+@37   = ~[PC Reply]Algo así era de esperar, me temo.~
+@38   = ~[PC Reply]No creeréis esas tonterías, ¿verdad?~
+@39   = ~[PC Reply]Hmm... no es una mala idea. Lástima que no se me ocurrió antes.~
+@40   = ~[Duke Belt]Creemos que son meros rumores.~
+@41   = ~[PC Reply]Entiendo. Si ayuda a que la ciudad se calme, entonces me iré.~
+@42   = ~[PC Reply]¿Me estáis echando? ¿Así de fácil, después de todo lo que hice por Puerta de Baldur?~
+@43   = ~[PC Reply]¿"Tan silenciosamente como sea posible"? No queréis que vuelva, ¿verdad?~
+@44   = ~[PC Reply]¿A dónde se supone que debo ir?~
+@45   = ~[PC Reply]No me vais a decir lo que tengo que hacer. Soy el héroe de esta ciudad y me quedaré todo el tiempo que me plazca.~ ~[PC Reply]No me vais a decir lo que tengo que hacer. Soy la heroína de esta ciudad y me quedaré todo el tiempo que me plazca.~
+@46   = ~[Duke Belt]Nosotros, los Duques de esta ciudad y todos en su sano juicio no estamos ciegos ante vuestros extraordinarios logros para esta ciudad, <CHARNAME>. Pero también debemos pensar en la seguridad y la paz de Puerta de Baldur, y que ahora se ve amenazada por vuestra presencia. Si os importa aunque sea un poco esta ciudad, entonces preparaos para iros voluntariamente.~
+@47   = ~[Duke Belt]No solo os estamos enviando lejos. Tenemos una misión muy importante para vos. El portal bajo el Castillo Dragasta sigue latente. La sangre divina podría reactivarlo en cualquier momento, no solo vuestra sangre, sino la de cualquier otro hijo de Bhaal. Estamos literalmente sentados sobre un barril de pólvora que continúa amenazando la Costa de la Espada, y que muchos ahora conocen, también.~
+@48   = ~[Duke Belt]Encontrad la forma de cerrar el portal para siempre, <CHARNAME>. Esa es la tarea que os encomendamos. Sois el héroe de Puerta de Baldur, haced honor a ese nombre y liberadnos de este peligro. Al mismo tiempo, demostrad que nadie aquí debe temeros a vos y a vuestra herencia divina.~ ~[Duke Belt]Encontrad la forma de cerrar el portal para siempre, <CHARNAME>. Esa es la tarea que os encomendamos. Sois la heroína de Puerta de Baldur, haced honor a ese nombre y liberadnos de este peligro. Al mismo tiempo, demostrad que nadie aquí debe temeros a vos y a vuestra herencia divina.~
+@49   = ~[PC Reply]Lo haré. ¿Tenéis alguna pista sobre cómo proceder?~
+@50   = ~[PC Reply]¿Cómo os lo imagináis?~
+@51   = ~[PC Reply]Oh, conseguir la sangre del maestro demonio del mismísimo Averno no fue suficiente, ¿verdad?~
+@52   = ~[PC Reply]No veo por qué tengo que ser yo.~
+@53   = ~[PC Reply]Me iré, si insistís en enviarme lejos. Pero el portal es vuestro problema.~
+@54   = ~[PC Reply]No aceptaré órdenes vuestras.~
+@55   = ~[Duke Belt]No podemos obligaros a ayudar a cerrar el portal. Pero debéis saber que es un prerrequisito para que podáis volver a caminar por las calles sin ser acosado. Si no nos ayudáis a librarnos del peligro que supone el portal, entonces no seréis bienvenido aquí, por el bien de la paz en esta ciudad.~ ~[Duke Belt]No podemos obligaros a ayudar a cerrar el portal. Pero debéis saber que es un prerrequisito para que podáis volver a caminar por las calles sin ser acosada. Si no nos ayudáis a librarnos del peligro que supone el portal, entonces no seréis bienvenida aquí, por el bien de la paz en esta ciudad.~
+@56   = ~[Duke Belt]Vuestra ruta os llevará primero a Amn, la nación con la que evitasteis que entráramos en guerra. Los magos más capaces de sellar portales se llaman Incántatrix, y los encontraréis en esta región.~
+@57   = ~[Duke Belt]Tomad esta carta. Está dirigida al embajador de los Magos Encapuchados en Athkatla, la capital de Amn. Esta carta deja claro que se trata de una petición de los Duques de Puerta de Baldur y debe ser tratada con la urgencia adecuada.~
+@58   = ~[Duke Belt]Informaremos a las autoridades de Athkatla de vuestra aparición paralelamente a vuestro viaje, no en relación a vuestra herencia divina o lo que ocurrió aquí, sino como emisario en busca de una forma de cerrar el portal para siempre.~
+@59   = ~[Duke Belt]Esto nos lleva a otro tema importante. El alma de Skie ha desaparecido, y esto ha dado lugar a las más descabelladas conspiraciones entre la gente sobre vuestro papel en ello, que han alimentado los rumores antes mencionados. Algunos creen que vendisteis las almas de los ciudadanos de Puerta de Baldur en el Averno por un pacto con los demonios.~
+@60   = ~[PC Reply](suspiro)~
+@61   = ~[PC Reply]¿Qué pasó exactamente con el alma de Skie?~
+@62   = ~[PC Reply]Espero que sepáis que no tengo nada que ver con esto.~
+@63   = ~[PC Reply]Hmm, no es una mala idea, en realidad. ¿Dijisteis que el portal puede ser reabierto con mi sangre?~
+@64   = ~[Duke Belt]¡Esto no es una broma!~
+@65   = ~[Duke Belt]Sabemos por el Cabo Duncan que os encontró inconsciente en la escena del crimen, mientras que el arma del crimen había desaparecido.~
+@66   = ~[PC Reply]¿Así que dudáis de mi inocencia sobre el destino de Skie?~
+/* @67: Same as @14 from c#sodtweaks/translations/%s/sod_revisedend.tra */
+@67   = ~[PC Reply]¡Esto es horrible! Lo siento mucho.~
+/* @68: Same as @15 from c#sodtweaks/translations/%s/sod_revisedend.tra */
+@68   = ~[PC Reply]¿Qué haremos ahora?~
+/* @69: Same as @16 from c#sodtweaks/translations/%s/sod_revisedend.tra */
+@69   = ~[PC Reply]¿Por qué me importaría?~
+@70   = ~[Duke Belt]No os lo toméis a la ligera, <CHARNAME>.~
+@71   = ~[Duke Belt]Creemos que vos mismo fuisteis una víctima en esto, pero que claramente eráis vos el verdadero objetivo de este ataque, no Skie. Vuestra culpa en esto no es por lo que hicisteis, sino por lo que *sois*.~ ~[Duke Belt]Creemos que vos misma fuisteis una víctima en esto, pero que claramente eráis vos el verdadero objetivo de este ataque, no Skie. Vuestra culpa en esto no es por lo que hicisteis, sino por lo que *sois*.~
+@72   = ~[Duke Belt]¿Qué sabéis sobre el paradero del arma del crimen, la Daga Robaalmas?~
+@73   = ~[PC Reply]No recuerdo que hubiera una daga.~
+@74   = ~[Duke Belt]Ayudadnos, <CHARNAME>, y habrá una oportunidad de que la ciudad vuelva a descansar. Haced lo que os pedimos y *podremos* calmar cualquier disturbio restante que esté ocurriendo en vuestro nombre en las calles de nuestra ciudad.~
+@75   = ~[Duke Belt]Utilizaremos el resto del día para hacer los preparativos para vuestra partida. No tendréis que iros sin equipo ni sin apoyo.~
+@76   = ~[Duke Belt]Imoen, vuestra amiga de la infancia, está buscando más compañeros de viaje mientras hablamos.~
+@77   = ~[Duke Belt]Ordenad vuestro equipo y descansad una vez más. Mañana por la mañana os sacaremos de la ciudad sin que os deis cuenta.~
+@78   = ~[Captain Corwin]El deber me llama, <CHARNAME>, no todos podemos irnos cuando la marea sube demasiado. Supongo que me quedaré cerca hasta que esto termine.~
+@79   = ~[Jaheira]Habéis recorrido un largo camino. Le prometimos a Gorion que velaríamos por vos, y superasteis cualquier ayuda que pudiéramos daros para luchar contra vuestros enemigos. A partir de ahora, seremos nosotros quienes os vigilemos para que no sucumbáis a vuestra herencia.~
+@80   = ~[Khalid]G-Gorion estaría orgulloso de vuestros logros. Iremos con vos y os ayudaremos con la t-tarea que os encomendaron los Duques.~
+@81   = ~[Khalid]G-Gorion estaría orgulloso de vuestros logros. Iré con vos y os ayudaré con la t-tarea que os encomendaron los Duques.~
+@82   = ~[Dynaheir]Os habéis convertido en un poderoso hijo de Bhaal. Vuestro viaje no ha terminado, y el nuestro tampoco.~ ~[Dynaheir]Os habéis convertido en una poderosa hija de Bhaal. Vuestro viaje no ha terminado, y el nuestro tampoco.~
+@83   = ~[Minsc]Bubú está triste porque la pequeña Skie ha muerto. Va a haber patadas en el culo, y Bubú dice que es algo que Minsc debería esperar.~
+@84   = ~[Glint]Ah, creo que esto es el adiós, <CHARNAME>. Seguiré mi camino y contaré la gran historia de <CHARNAME> a toda la familia a lo largo de la Costa de la Espada.~
+@85   = ~[Rasaad]El deber me llama <CHARNAME>. Nos volveremos a ver, estoy seguro de ello.~
+@86   = ~[Baeloth]Complicaciones, complicaciones... Seguiré mi camino entonces.~
+@87   = ~[Viconia]Viajar con vos ya no me da la protección que necesito, <CHARNAME>. Voy a ir por mi cuenta a partir de aquí.~
+@88   = ~[Voghiln]Tomemos una jarra de cerveza juntos cuando estéis en la ciudad, <CHARNAME>. Hasta entonces, este scald seguirá su propio camino!~
+@89   = ~[MKhiin]<CHARNAME> tiene toda la atención ahora. M'Khiin prefiere estar en las sombras. Nuestros caminos se separarán aquí.~
+@90   = ~[Edwin]¡Salimos victoriosos! (Bueno, eso no es tan sorprendente, ya que estaba contigo.) Ahora tengo que volver a los negocios, antes de que Edwin el Mago Rojo vea su nombre manchado por ridículos rumores difundidos por monos descerebrados.~
+@91   = ~[Safana]Me esperan en otro lugar <CHARNAME>, lejos de toda la atención de asesinos y asesinos. ¡Nos volveremos a ver!~
+@92   = ~[Dorn]Tengo un destino esperándome <CHARNAME>. Esconderme y huir como un cobarde no es uno de ellos. Adiós.~
+@93   = ~[Neera]Er... Iré por mi cuenta, <CHARNAME>. Tendré mi propia búsqueda para completar, y no quiero terminar como Skie allí... bastante muerta, ya sabes. Id a revivir a Skie y a luchar contra más asesinos, o lo que sea que hagáis. Estoy segura de que os las arreglaréis sin mí. Nos vemos.~
+@94   = ~[Duke Belt]El Duque Escudo de Plata está aquí, es un padre desesperado, <CHARNAME>. Escuchad lo que tiene que decir.~
+@95   = ~[Duke Silvershield]¡Vos! <CHARNAME> Tenéis que cazar al asesino... Sois el único que estuvo allí. Seguramente recordaréis quién lo hizo. ¡Id tras el asesino y encontrad el alma de mi pequeña Skie! Un padre os lo ruega, <CHARNAME>. Mi pequeña... mi Skie...~ ~[Duke Silvershield]¡Vos! <CHARNAME> Tenéis que cazar al asesino... Sois la única que estuvo allí. Seguramente recordaréis quién lo hizo. ¡Id tras el asesino y encontrad el alma de mi pequeña Skie! Un padre os lo ruega, <CHARNAME>. Mi pequeña... mi Skie...~
+@96   = ~[PC Reply]No puedo prometeros nada.~
+@97   = ~[PC Reply]Schael, por favor venid conmigo cuando me vaya mañana.~
+/* #54614 changed */
+@98   = ~[Captain Corwin]Podría ser peor. Eltan y Belt han movido montañas para calmar a la población y manteneros fuera de peligro.~
+/* #54615 changed */
+@99   = ~[PC Reply]Necesito vuestra ayuda, Schael. Venid conmigo. Encontremos juntos al asesino de Skie Silvershield. Por favor.~
+/* #54618 changed */
+@100  = ~[PC Reply]Que vengan. Los enviaré con Caelar, al infierno.~
+@101  = ~[Captain Corwin]Habéis sumido a la ciudad en el caos. Amenazáis lo que más aprecio: la seguridad y la paz de la gente de esta ciudad.~
+@102  = ~[PC Reply]¿En mí? ¿Por qué?~
+/* #54623 changed */
+@103  = ~[PC Reply]Y sin embargo aquí estáis. ¿Por qué? No para venir conmigo, supongo. Nunca desafiaríais a vuestro amado Puño Llameante.~
+/* #70319 changed */
+@104  = ~[PC Reply]Y por eso estáis aquí buscando consuelo. No tengo ninguno que daros, y no os lo ofrecería aunque lo tuviera. Fuera de aquí. Me dais asco. ¡Iros!~
+@105  = ~[PC Reply]Queréis decir sin vos, supongo. ¡No tiene que ser así! Creo en nosotros, Corwin.~
+@106  = ~[PC Reply]Eso parece. Porque obviamente estáis demasiado asustada para arriesgaros a amar de nuevo.~
+@107  = ~[PC Reply]Esperad, ¿qué? ¿Qué he hecho? ¿Qué he hecho?~
+/* #54641 changed */
+@108  = ~[Captain Corwin]Vuestra lengua afilada revela vuestra verdadera naturaleza, <CHARNAME>. La ciudad es un caos, la gente se pelea en las calles por vos, y no tenéis nada mejor que ofrecer que una nueva ocurrencia. La ciudad se merece algo mejor. Y yo también.~
+@109  = ~[PC Reply]Lo diré una vez más. Venid conmigo, Schael. Por favor.~
+/* #54656 changed */
+@110  = ~[PC Reply]Decídmelo vos. ¿Qué riesgos estáis dispuesta a correr por mí? Entonces sabremos la sinceridad de vuestros sentimientos.~
+/* #39439 changed */
+@111  = ~[Captain Corwin]Debemos poner fin a estas horas oscuras. Y eso no será posible, no si desaparecéis en secreto. Si os importa algo Puerta de Baldur... admitid vuestra responsabilidad en la situación actual. Mostraros y aceptad el castigo que os impondrán aquellos que intentan mantener la paz en esta ciudad. Demostrad a la gente aterrorizada que no sois inmortal ni estáis por encima de todo.~
+@112  = ~[PC Reply]¿En serio esperáis que sacrifique mi vida, por traer la paz a Puerta de Baldur?~
+@113  = ~[PC Reply]¿Estáis segura de que esto funcionará de la manera que pretendéis?~
+/* #39443 changed */
+@114  = ~[Captain Corwin]No importa. La ciudad es lo único que importa ahora. Mi padre me enseñó que un héroe, un verdadero héroe, está dispuesto a sacrificarse por un bien mayor. Os llamaron el héroe de Puerta de Baldur. Ahora tenéis la oportunidad de ganaros ese nombre.~ ~[Captain Corwin]No importa. La ciudad es lo único que importa ahora. Mi padre me enseñó que un héroe, un verdadero héroe, está dispuesto a sacrificarse por un bien mayor. Os llamaron la heroína de Puerta de Baldur. Ahora tenéis la oportunidad de ganaros ese nombre.~
+/* @115 - @124: lovetalk with Dorn */
+/* #54328 changed */
+@115  = ~[PC Reply]Os liberé una vez. Es hora de que me devolváis el favor. Me vendría bien vuestra ayuda cuando me vaya mañana.~
+@116  = ~[PC Reply]Me vendría bien vuestra ayuda cuando me vaya mañana.~
+@117  = ~[PC Reply]¿A qué os referís exactamente??~
+/* #54338 changed */
+@118  = ~[PC Reply]Tengo una confesión. En realidad no planeé nada de lo que pasa en la ciudad actualmente.~
+@119  = ~[PC Reply]Sí, ese soy yo. El más poderoso de los Hijos de Bhaal, capaz de hundir ciudades enteras.~ ~[PC Reply]Sí, esa soy yo. La más poderosa de los Hijos de Bhaal, capaz de hundir ciudades enteras.~
+@120  = ~[PC Reply]¿Estamos hablando de los disturbios en la ciudad o de creer que me llevé el alma de Skie para venderla a los demonios?~
+@121  = ~[Dorn]¡El caos! ¡La destrucción! Hay disturbios y crímenes por todas las calles. No podría haber servido mejor a mi señor tan bien como vos, <CHARNAME>.~
+@122  = ~[Dorn]Y para colmo el asesinato de la hija del Duque.~
+@123  = ~[Dorn]Marchaos, <CHARNAME>, llevad la muerte y el caos allá donde vayáis. Yo me quedaré aquí para recoger lo que habéis sembrado, y lo haré en vuestro nombre.~
+@124  = ~[PC Reply]Venid conmigo cuando me vaya, Dorn.~
+/* @125 - @132: lovetalk with Glint */
+@125  = ~[PC Reply]Necesito irme pronto. Venid conmigo, Glint.~
+@126  = ~[PC Reply]Me van a enviar lejos de Puerta de Baldur, pero no quiero que compartáis este destino. Esto es un adiós.~
+/* #54857 changed */
+@127  = ~[Glint]Podría decir que os quiero, y no estaría mintiendo. Pero mentiría si dijera que os quiero más de lo que quiero vivir una vida familiar. Hay mucha gente en las calles que claramente busca cualquier excusa para cortar a un elegante gnomo en la flor de su vida si se asocia con vos.~
+@128  = ~[PC Reply]Dioses, Glint, ¿es eso lo que os estáis preguntando? ¡Soy yo, <CHARNAME>! Ya me conocéis. No he cambiado.~
+@129  = ~[Glint]Por supuesto que sé que no vendisteis nuestras almas a los demonios. Y también sé que no os proponéis devorar la ciudad para ser más poderoso. Tampoco creo que matarais a Skie, aunque fue un shock, veros así con ella. Pero...~
+@130  = ~[Glint]Sabéis que salí a ver a mi familia y parientes. Soy un hombre de familia, de verdad... y eso es difícil de hacer si uno necesita huir y esconderse. Lo siento, <CHARNAME>.~
+@131  = ~[Glint]Sé que los Duques quieren que os vayáis. Imoen ya me pidió que fuera con vos, pero... No lo haré, <CHARNAME>.~
+@132  = ~[Glint]Me estáis facilitando mucho lo que quiero deciros.~
+/* @133 - @140: lovetalk with Neera */
+/* #53206 changed */
+@133  = ~[Neera]Vaya. Esconderos detrás de un ejército de soldados no os sienta muy bien.~
+/* #53207 changed */
+@134  = ~[PC Reply]¡Neera! Venid conmigo cuando salga de aquí.~
+@135  = ~[PC Reply]Estoy aquí porque los Duques dejaron claro que es lo mejor para la ciudad ahora mismo.~
+/* #53210 changed */
+@136  = ~[Neera]Vos y Skie, <CHARNAME>. Explicadme lo que pasó allí, por favor. Necesito entenderlo.~
+/* #53212 changed */
+@137  = ~[PC Reply]Alguien la asesinó. No fui yo. No sé quién, ni cómo lo hicieron.~
+/* #53213 changed */
+@138  = ~[PC Reply]¿Realmente consideráis que fui yo? Iros, entonces. No os necesito.~
+@139  = ~[PC Reply]Venid conmigo, Neera.~
+@140  = ~[Neera]¿Tenéis idea de lo que está pasando fuera? ¿En las calles? Los Duques no os esconden aquí por nada, os lo aseguro. Estar asociado con vos actualmente... no es lo más sano que le puede pasar a alguien, sabéis.~
+/* @141 - @146: lovetalk Rasaad */
+@141  = ~[PC Reply]Necesito irme pronto. Venid conmigo.~
+@142  = ~[Rasaad]Ahora lo entiendo. Aunque salgáis victoriosa y no caigáis en las tinieblas, seguirá siendo vuestra herencia la que sembrará el caos y la destrucción allá donde vayáis.~
+/* #70287 changed */
+@143  = ~[PC Reply]Por favor, Rasaad. No podéis creer que yo quería lo que está pasando afuera.~
+/* #70294 changed */
+@144  = ~[Rasaad]Me alegra saber que os ofrezco algo de consuelo.~
+@145  = ~[PC Reply]¿A esto hemos llegado? ¿No confiáis en vuestros sentimientos porque creéis que son sólo un "capricho" o un "deseo"? Creía que lo nuestro era real, Rasaad.~
+@146  = ~[PC Reply]Si de verdad creéis que todo lo que traigo a la gente es caos y muerte, entonces nunca hubo nada real entre nosotros.~
+/* @147 - @150: lovetalk Safana */
+@147  = ~[PC Reply]Safana, venid conmigo cuando me vaya de este lugar. ¡Todo se calmará, creedme!~
+@148  = ~[PC Reply]¿Barreras? Más bien una jaula de oro, diría yo.~
+@149  = ~[PC Reply]Para ser sincero, yo también. Y esperaba que fueran barrotes de verdad, en vuestro caso.~
+@150  = ~[PC Reply]¿Os estáis burlando de mí?~
+/* @151 - @153: lovetalk Viconia */
+@151  = ~[PC Reply]¿Sangre en mis manos? ¿Queréis decir en sentido figurado? No me podéis hacer responsable de lo que pasa fuera en las calles, ¿o sí?~
+/* #53926 changed */
+@152  = ~[PC Reply]¿Habéis venido aquí para burlaros de mí o vais a venir conmigo cuando me vaya de esta ciudad?~
+/* #53938 changed */
+@153  = ~[Viconia]Pero si me atrapan a vuestro lado, seré ejecutada en el acto por los bárbaros que ocupan esta ciudad. Mi vida ya es bastante dura. No puedo asociarme con un hijo de Bhaal en fuga.~ ~[Viconia]Pero si me atrapan a vuestro lado, seré ejecutada en el acto por los bárbaros que ocupan esta ciudad. Mi vida ya es bastante dura. No puedo asociarme con una hija de Bhaal en fuga.~
+/* @154 - @162: lovetalk Voghiln */
+@154  = ~[PC Reply]Voghiln, yo no quería que ocurriera este caos. Lo sabéis, ¿verdad?~
+@155  = ~[PC Reply]Venid conmigo cuando abandone la ciudad, Voghiln.~
+/* #70309 changed */
+@156  = ~[Voghiln]¡Vos fuisteis el héroe, el campeón! ¡Salvasteis la Costa de la Espada de Sarevok, de Caelar, de las hordas de los Nueve Infiernos! "¿Cómo puede alguien creeros culpable de vender almas?" Dije, alegando vuestro caso a quienquiera que me escuchara.~
+/* #54146 changed */
+@157  = ~[Voghiln]Ay, sólo soy un skald. Un poderoso skald, sin duda, pero todas mis palabras melosas no pueden hacer cambiar de opinión a una multitud que os llama monstruo.~
+/* #54153 changed */
+@158  = ~[PC Reply]Entonces... Tenéis que salir de aquí, Voghiln. Iros, antes de que sufráis daños por mi culpa.~
+@159  = ~[PC Reply]Venid conmigo cuando deje este lugar mañana, Voghiln.~
+/* #54155 changed */
+@160  = ~[PC Reply]No me sorprende. Los chismosos del pueblo deben divertirse con estas historias.~
+@161  = ~[PC Reply]Bueno, entonces iros, si tenéis miedo.~
+/* #54156 changed */
+@162  = ~[Voghiln]Debo irme. No podre ayudar a nadie si me toman por un esbirro sujeto a la voluntad de Bhaal~
+@163  = ~[PC Reply]Aún no estoy en una celda, ni siquiera soy un prisionero. Al contrario, soy más famoso y popular de lo que me gustaría ser.~ ~[PC Reply]Aún no estoy en una celda, ni siquiera soy una prisionera. Al contrario, soy más famosa y popular de lo que me gustaría ser.~
+/* @164 - @165: last visit Hooded Man */
+/* #66664 changed */
+@164  = ~[PC Reply]Esto no está bien. No quería que las cosas escalaran así, nunca podría hacer algo así a propósito. ¡Esto no tiene sentido!~
+@165  = ~[PC Reply]¿Cómo entrasteis aquí? ¡Se suponía que este era un lugar seguro! ¡Salid de aquí antes de que los guardias os ejecuten!~
+/* @166 - @184: last visit Duke Belt */
+@166  = ~[PC Reply]Estaré mucho mejor cuando esté lejos de esta ciudad.~
+@167  = ~[PC Reply]Os traeré ambos.~
+@168  = ~[Duke Belt]No hasta que hayáis cumplido la misión que os hemos encomendado, <CHARNAME>... Os lo imploramos como miembros de esta ciudad, como representantes y como padres devotos. Os deseamos éxito de todo corazón, por Skie, por la serenidad de esta ciudad, pero también por vuestro propio bien. Gracias por todo lo que ya habéis hecho por nosotros, y por todo lo que haréis en el futuro.~
+@169  = ~[Duke Belt]Vuestra amiga Imoen ha conseguido algunos compañeros para acompañaros en esta aventura. Os están esperando ahora.~
+@170  = ~[Duke Belt]Vuestro linaje... los recientes acontecimientos han tenido un fuerte impacto en mucha gente. No es exagerado decir que la ciudad está partida en dos; por un lado, los que lucharían por vos; y por el otro, los que os quieren muerto, igual que a Sarevok.~ ~[Duke Belt]Vuestro linaje... los recientes acontecimientos han tenido un fuerte impacto en mucha gente. No es exagerado decir que la ciudad está partida en dos; por un lado, los que lucharían por vos; y por el otro, los que os quieren muerta, igual que a Sarevok.~
+@171  = ~[Duke Belt]La noche no ha calmado el ardor de la población. Al contrario, empieza a circular un nuevo rumor de que fue vuestra sangre la que abrió el portal al Averno. Algunos dicen ahora que Sarevok quería empezar una guerra entre los hombres, ¡pero que a vos os gustaría empezar una guerra con los demonios!~
+@172  = ~[Duke Belt]Tomad la carta que os dimos e id en busca de una Incántatrix capaz de sellar este portal, <CHARNAME>. No veo otra forma de calmar los ánimos de la gente y evitar que crean que podéis marchar hacia la ciudad a la cabeza de un ejército de demonios.~
+@173  = ~[Duke Belt]Entar... El Duque Escudo de Plata, ya os ha rogado que encontréis la daga y salvéis a su hija. Y lamento deciros que ya no estaréis a salvo hasta que este asunto se resuelva, <CHARNAME>... hasta que la daga sea encontrada y el alma de Skie sea liberada.~
+/* @174: Same as @34 from c#sodtweaks/translations/%s/sod_revisedend.tra */
+@174  = ~[PC Reply]Por mi honor, no descansaré hasta encontrar la daga y liberar a Skie.~
+@175  = ~[PC Reply]Por mi honor, no descansaré hasta que este asunto esté resuelto, así que me voy en busca de los magos encapuchados de Amn, para cerrar el portal.~
+@176  = ~[PC Reply]Iré a Amn a buscar ayuda para sellar el portal, pero no puedo prometeros nada sobre Skie, no tengo ni la más remota idea sobre ese encapuchado.~
+/* @177: Same as @35 from c#sodtweaks/translations/%s/sod_revisedend.tra */
+@177  = ~[PC Reply]Parece que el encapuchado no ha terminado conmigo de todos modos, así que bien puedo ir tras él por la daga, entre otras cosas.~
+@178  = ~[PC Reply]No he hecho nada malo. No debería tener que huir de la ciudad en secreto como un criminal.~ ~No he hecho nada malo. No debería tener que huir de la ciudad en secreto como una criminal.~
+/* @179: Same as @37 from c#sodtweaks/translations/%s/sod_revisedend.tra */
+@179  = ~[PC Reply]No me importa. Ya he conseguido entrar en la ciudad sin invitación.~
+/* @180: Same as @38 from c#sodtweaks/translations/%s/sod_revisedend.tra */
+@180  = ~[Duke Belt]Esta vez no será posible que encuentre los medios para volver a entrar. Nos ocuparemos de eso.~
+@181  = ~[Duke Belt]Yo... No puedo garantizar vuestra seguridad, <CHARNAME>.~
+/* @182 is NOT the same as @40 in c#sodtweaks, but similar */
+@182  = ~[Duke Belt]Si Skie puede salvarse, quedaréis libre de esos ridículos rumores que os acusan de vender nuestras almas a los demonios. No podemos cambiar la opinión de la gente sobre vuestro linaje, pero podemos limpiar vuestro nombre y permitiros caminar libremente por la ciudad, una vez que el alma de Skie nos sea devuelta, por supuesto.~
+/* @183: Same as @41 from c#sodtweaks/translations/%s/sod_revisedend.tra */
+@183  = ~[Duke Belt]Me alegra oír eso.~
+@184  = ~[Duke Belt]Vuestra determinación para encontrarla es todo lo que necesitaba oír.~
+/* @185 - @190: FF soldier brings PC to sewer exit */
+@185  = ~[FF Soldier (male)]Mis ordenes son escoltaros hasta la salida donde os esperan vuestros amigos. Puedo llevaros directamente allí sin que os molesten.~
+/* @186: Same as @44 from c#sodtweaks/translations/%s/sod_revisedend.tra [PC Reply] */
+@186  = ~No importa. Voy a ir solo y ver lo que encuentro en el camino.~ ~No importa. Voy a ir sola y ver lo que encuentro en el camino.~
+/* @187: Same as @45 from c#sodtweaks/translations/%s/sod_revisedend.tra  [PC Reply] */
+@187  = ~Como queráis. Seguid el camino entonces.~
+/* @188: Same as @46 from c#sodtweaks/translations/%s/sod_revisedend.tra */
+@188  = ~[FF Soldier (male)]Argh. El Duque Belt pedirá mi cabeza por esto... Espero que no... Bueno, no puedo obligaros a seguirme, así que buena suerte ahí abajo.~
+/* @189: Same as @42 from c#sodtweaks/translations/%s/sod_revisedend.tra */
+@189  = ~[PC Reply]Creo que puedo encontrar el camino desde aquí. Vuestra escolta no será necesaria.~
+@190  = ~[PC Reply]Seguid el camino.~
+/* @191 - @208: sewer confrontation with Captain Corwin and/or Corporal Bence Duncan */
+@191  = ~[Captain Corwin]Despacio, <CHARNAME>. ¡Muy, muy despacio!~
+@192  = ~[PC Reply]¿De que va todo esto, Corwin? Los Duques me enviaron fuera de la ciudad, solo estoy buscando mi propia salida, eso es todo.~
+@193  = ~[PC Reply]¿Me estáis amenazando?~
+@194  = ~[PC Reply]¿Skie? ¿Me estáis haciendo responsable de su muerte?~
+/* #39616 changed */
+@195  = ~[PC Reply]¿Venís a mí de esta manera? Pensé que vos y yo teníamos algo.~
+@196  = ~[PC Reply]Y si no lo hago, ¿qué haréis? ¿Rechazarme? ¿Sois consciente de que estáis actuando en contra de las órdenes de vuestro superior, el Duque Eltan... *todos* los Duques de esta ciudad?~
+@197  = ~[PC Reply]Bueno, no tenéis muchas opciones, órdenes del Duque Eltan. ¿A menos que eso no tenga valor para vos?~
+@198  = ~[PC Reply]¿Así que habéis decidido tomar el asunto en vuestra propias manos? ¿Es así como queréis servir a la ciudad que tanto apreciáis? ¿Tomándoos la justicia por vuestra mano?~
+@199  = ~[PC Reply]Lo que estáis haciendo está mal, y lo sabéis. El Duque Entar Escudo de Plata confía en mí para encontrar al asesino de su hija y el Duque Eltan ha ordenado al Puño Llameante que me escolte fuera de la ciudad. ¿Qué es lo que realmente queréis?~
+@200  = ~[PC Reply]Mi conciencia está limpia, a diferencia de la vuestra. Desquitaos conmigo y aceptad las consecuencias.~
+@201  = ~[PC Reply]No me gusta a donde va esto, Corwin. Entrad en razón. ¿Qué creéis que vais a conseguir con esto, aparte de separar a una madre de su hija, sea cual sea el resultado de nuestro enfrentamiento?~
+@202  = ~[Captain Corwin]Le estoy dejando ir. Cabo, bajen sus armas.~ ~[Captain Corwin]La estoy dejando ir. Cabo, bajen sus armas.~
+@203  = ~[Captain Corwin]¡Se acabó, Cabo! Nosotros... hemos cometido un error. ¡Bajen sus armas, es una orden!~
+@204  = ~[Corporal Bence Duncan]El Duque Eltan os quiere fuera de la ciudad, y eso es lo que va a pasar, vuestra partida será sólo un poco más definitiva de lo esperado. ¡Estoy seguro de que nadie lamentará vuestra desaparición!~
+@205  = ~[PC Reply]Estáis locos, los dos.~
+@206  = ~[PC Reply]Corwin, por favor. Entiendo que al Cabo le resulte difícil atender a razones, pero vos no sois como él.~
+@207  = ~[PC Reply]He sido enviado a buscar al asesino de Skie, ¡Soy el único que lo ha visto! ¿Queréis robarle a un padre su última esperanza?~ ~[PC Reply]He sido enviada a buscar al asesino de Skie, ¡Soy la única que lo ha visto! ¿Queréis robarle a un padre su última esperanza?~
+@208  = ~[PC Reply]¿Por qué estáis haciendo esto?~
+/* @209 - @214: Imoen at sewer exit */
+@209  = ~[Imoen]Quiero decir, *sé* que los Duques garantizan vuestra seguridad y todo eso, pero... ¿habéis visto lo que está pasando en la ciudad? Pensad en todos los refugiados que están llegando últimamente, ahora imaginadlos dividiéndose en dos grupos y empezando a luchar entre ellos. ¡Es una locura!~
+@210  = ~[Imoen]Sabéis, me fui a buscar algunos compañeros de viaje tan pronto como los Duques mencionaron vuestra partida.~
+@211  = ~[Imoen]¡Y encontré algunos! No tenemos que ir solos, <CHARNAME>.~ ~[Imoen]¡Y encontré algunos! No tenemos que ir solas, <CHARNAME>.~
+@212  = ~[Imoen]No he encontrado a nadie más, <CHARNAME>.~
+@213  = ~[Imoen]Aparte de los que ya están con nosotros, claro.~
+@214  = ~[Imoen]Iré con vos pase lo que pase. Espero que haya quedado claro, ¿eh, dormilón?~ ~[Imoen]Iré con vos pase lo que pase. Espero que haya quedado claro, ¿eh, dormilona?~
+@215  = ~[Jaheira]Sería bueno aclarar nuestras ideas y pensar en cómo seguiremos para cumplir lo que los Duques os pidieron, <CHARNAME>. Sin medios para localizar al encapuchado, será un largo camino el que nos espera.~
+@216  = ~[Imoen]Descansad aquí, <CHARNAME>, ¿de acuerdo? Yo iré a echar un vistazo a ver quién de nuestros viejos amigos puede estar todavía por aquí. Esto es algo importante que tenemos que hacer.~
+/* #69820 changed */
+@217  = ~Duque Belt, es bueno veros. Tengo noticias. Ahora sé quién mató a Skie. Fue el hombre encapuchado que me acechaba por mi herencia divina.~
+@218  = ~[Minsc]¡El malvado encapuchado mató a la pequeña Skie! Patearemos su malvado trasero, ¿verdad, Bubú?~
+@219  = ~[Jaheira]Así que este "encapuchado" no solo jugó con vos sino que no se detuvo en matar amigos para hacerlo. Esto debería servir como advertencia de lo que tendremos que esperar de él si no lo tratamos como la amenaza que es.~
+@220  = ~[Dynaheir]Un mago talentoso, interesado en vuestro linaje, y no por razones amistosas. Permaneceremos cautelosos, ya que los hijos de Bhaal tienen muchos enemigos.~
+@221  = ~[Khalid]¡Entonces ya sabemos qué ha-hacer!~
+@222  = ~[Imoen]¡Wow! ¿Ese extraño encapuchado habría matado a Skie?~
+@223  = ~[Khalid]¡No pararemos hasta que lo e-encontremos!~
+@224  = ~[Jaheira]Ciertamente se interesó mucho por vos, <CHARNAME>. Veremos si será difícil seguirle la pista o si aparecerá por su propia voluntad. Deberíamos estar preparados.~
+@225  = ~[Imoen]Ookay, entiendo lo que decís.~
+@226  = ~[Jaheira]Los Duques nos envían al sur, a Amn. Deberíamos empezar allí~
+@227  = ~[Jaheira]No sabemos dónde o cuándo el encapuchado volverá a por vos. Debemos ir a una región donde no seáis conocido como un poderoso vástago de Bhaal. Allí, podemos descansar y preparar nuestras fuerzas para la próxima confrontación.~ ~[Jaheira]No sabemos dónde o cuándo el encapuchado volverá a por vos. Debemos ir a una región donde no seáis conocida como un poderoso vástago de Bhaal. Allí, podemos descansar y preparar nuestras fuerzas para la próxima confrontación.~
+@228  = ~[Khalid]Deberíamos d-dirigirnos al sur por ahora. Vuestro nombre no llamará tanto la atención allí, lo que nos dará tiempo para preparar un plan de acción.~
+@229  = ~[Dynaheir]Metamagos, o Incántatrix, como se les llama, son manipuladores muy poderosos de la magia. Los Duques hacen bien en enviaros a buscarlos.~
+@230  = ~[Dynaheir]Parecería que el sur es la opción más obvia en este momento.~
+@231  = ~[Minsc]¡Minsc es feliz mientras haya nueces para Bubú! Traseros malvados que patear y liberemos a la pequeña Skie.~
+@232  = ~[Imoen]Supongo que el sur es un buen camino por ahora. ¡Y está lejos de Puerta de Baldur y el Castillo Dragasta!~
+@233  = ~[Imoen]¡No pararemos hasta encontrarlo, <CHARNAME>! ¿Lo haremos?~
+@234  = ~[PC Reply]Tenemos que discutir a dónde vamos a ir desde aquí, cuanto antes mejor.~
+@235  = ~[PC Reply]El asesino de Skie... Sé quién es, era el encapuchado que me acechaba por mi linaje.~
+
+@236  = ~[Imoen]¿Estamos listos entonces?~
+
+/* new for vAlpha_230408 */
+@237  = ~¡Skie fue asesinada por vuestra culpa, <CHARNAME>! Era un peón en un plan que se desarrollaba a vuestro alrededor debido a vuestro linaje. Vendrán a por vos otra vez, y nos lo haréis saber si eso ocurre. Es... es todo lo que tenemos...~
+/*
+@238  = ~
+@239  = ~
+@240  = ~
+*/

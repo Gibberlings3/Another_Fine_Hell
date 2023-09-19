@@ -147,6 +147,7 @@ END //Another Fine Hell
 
 CREDITS
 
+ElGameViejuno: Spanisch Translation (vAlpha_230919)
 JohnBob: French translation (vAlpha_211220)
 Lauriel: ideas 
 Machiavélique: proofreading (French) (vAlpha_220123)
@@ -176,6 +177,11 @@ SoD Walkthrough at GameBanshee http://www.gamebanshee.com/baldursgate/walkthroug
 
 
 HISTORY
+
+Version Alpha_230919
+-Spanish version added, by ElGamerViejuno.
+-(EET) Last save at end should not overwrite Prologue Save.
+-Typo corrections.
 
 Version Alpha_230415
 -French version completed, by JohnBob.
